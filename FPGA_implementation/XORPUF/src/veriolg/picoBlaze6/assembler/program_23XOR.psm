@@ -1,0 +1,570 @@
+;******************************************************************
+; Author      : D P Sahoo
+; Email       : dpsahoo.cs@gmail.com
+; Date        : 06.01.2014
+; Last Update : 04/11/2017
+;******************************************************************
+; Description: This will be executed by picoBlaze microcontroller.
+; It will apply challenges to PUF cuircuit and work as controller 
+; to PUF, and finally receive response to tranfer to PC.
+; 
+;******************************************************************
+;
+; Define Constants
+;*****************************************************************
+CONSTANT WSIZE,    08          ; Word size 
+CONSTANT C_BASE_ADDR,   00     ; Challenge base address      
+
+; RS232 port's status
+CONSTANT tx_half_full,    01   ;  Transmitter half full - bit0
+CONSTANT tx_full,         02   ;  FIFO full 			- bit1
+CONSTANT rx_half_full,    04   ;  Receiver half full 	- bit2
+CONSTANT rx_full,         08   ;  FIFO full 			- bit3
+CONSTANT rx_data_present, 10   ;  data present 			- bit4
+;
+; Output ports (8-bits)
+CONSTANT CHAL_1_PORT_O,    00 ;
+CONSTANT CHAL_2_PORT_O,    01 ;
+CONSTANT CHAL_3_PORT_O,    02 ;
+CONSTANT CHAL_4_PORT_O,    03 ;
+CONSTANT CHAL_5_PORT_O,    04 ;
+CONSTANT CHAL_6_PORT_O,    05 ;
+CONSTANT CHAL_7_PORT_O,    06 ;
+CONSTANT CHAL_8_PORT_O,    07 ;
+CONSTANT CHAL_9_PORT_O,    08 ;
+CONSTANT CHAL_10_PORT_O,   09 ;
+CONSTANT CHAL_11_PORT_O,   0A ;
+CONSTANT CHAL_12_PORT_O,   0B ;
+CONSTANT CHAL_13_PORT_O,   0C ;
+CONSTANT CHAL_14_PORT_O,   0D ;
+CONSTANT CHAL_15_PORT_O,   0E ;
+CONSTANT CHAL_16_PORT_O,   0F ;
+CONSTANT CHAL_EN_PORT_O,   10 ;
+CONSTANT UART_Tx_PORT_O,   11 ;
+CONSTANT PUF_START_PORT_O, 12 ;
+;
+; Input ports (8-bit)
+CONSTANT  UART_STATUS_PORT_I,  00 ;
+CONSTANT  UART_Rx_PORT_I,      01 ;
+CONSTANT  RESP_READY_PORT_I,   02 ;
+CONSTANT  RESP_1_PORT_I,       03 ;
+CONSTANT  RESP_2_PORT_I,       04 ;
+CONSTANT  RESP_3_PORT_I,       05 ;
+CONSTANT  RESP_4_PORT_I,       06 ;
+CONSTANT  RESP_5_PORT_I,       07 ;
+CONSTANT  RESP_6_PORT_I,       08 ;
+CONSTANT  RESP_7_PORT_I,       09 ;
+CONSTANT  RESP_8_PORT_I,       0A ;
+CONSTANT  RESP_9_PORT_I,       0B ;
+CONSTANT  RESP_10_PORT_I,      0C ;
+CONSTANT  RESP_11_PORT_I,      0D ;
+CONSTANT  RESP_12_PORT_I,      0E ;
+CONSTANT  RESP_13_PORT_I,      0F ;
+CONSTANT  RESP_14_PORT_I,      10 ;
+CONSTANT  RESP_15_PORT_I,      11 ;
+CONSTANT  RESP_16_PORT_I,      12 ;
+;	
+; Scratchpad memory addresses to store  challenge.	
+CONSTANT CHAL_1,  00;
+CONSTANT CHAL_2,  01;
+CONSTANT CHAL_3,  02;
+CONSTANT CHAL_4,  03;
+CONSTANT CHAL_5,  04;
+CONSTANT CHAL_6,  05;
+CONSTANT CHAL_7,  06;
+CONSTANT CHAL_8,  07;
+CONSTANT CHAL_9,  08;
+CONSTANT CHAL_10, 09;
+CONSTANT CHAL_11, 0A;
+CONSTANT CHAL_12, 0B;
+CONSTANT CHAL_13, 0C;
+CONSTANT CHAL_14, 0D;
+CONSTANT CHAL_15, 0E;
+CONSTANT CHAL_16, 0F;
+;
+; Commands [PC <=> PICO]
+;*****************************************************************
+CONSTANT CHAR_C,  43  ; Prepare to receive challenges. (PC -> PICO) 
+CONSTANT CHAR_V,  56  ; Send the received challenges. (PC -> PICO)
+CONSTANT CHAR_B,  42  ; Next Bytes are received challenges. (PICO -> PC) 
+CONSTANT CHAR_R,  52  ; Response Ready and Next two bytes are responses (PICO -> PC) 
+CONSTANT CHAR_S,  53  ; Start PUF evaluation. (PC -> PICO)
+CONSTANT CHAR_Q,  51  ; Reply of command S.
+CONSTANT CHAR_N,  4E  ; Received responses are not same. Resend responses. (PC -> PICO) 
+CONSTANT CHAR_A,  41  ; To check whether connection is active or not. (PC -> PICO)
+CONSTANT CHAR_Y,  59  ; response of command A. Y = Yes (PICO -> PC)
+CONSTANT CHAR_W,  57  ; Wait for response (PC -> PICO)
+CONSTANT CHAR_E,  45  ; reply: Evaluation has not finished yet.
+CONSTANT CHAR_F,  46  ; reply: Evaluation finished.
+;
+; Renamed registers
+;*****************************************************************
+NAMEREG sF, UART_data ; used to pass data to and from the UART
+NAMEREG sE, RESP_data ; used to store response
+NAMEREG sD, nWORD     ; Number of 64-bit words
+NAMEREG sC, ADDR_REG  ; 
+NAMEREG sB, WID       ; Word ID
+NAMEREG sA, CPORT_ID       ; Word ID
+
+; Actions
+;*****************************************************************
+START:
+;**************************
+ welcome_to_pico:
+;**************************
+LOAD UART_data, character_h
+CALL write_character
+LOAD UART_data, character_e
+CALL write_character
+LOAD UART_data, character_l
+CALL write_character
+LOAD UART_data, character_l
+CALL write_character
+LOAD UART_data, character_o
+CALL write_character
+
+;***************************
+ COMMAND_Loop: 
+;***************************	
+INPUT 	s0, UART_STATUS_PORT_I
+TEST  	s0, rx_data_present
+JUMP  	Z, COMMAND_Loop
+INPUT 	UART_data, UART_Rx_PORT_I 
+COMPARE UART_data, CHAR_A          ; Are you active ? [PICO <- PC]
+JUMP 	Z, send_reply
+COMPARE UART_data, CHAR_C          ; Read challenge  [PICO <- PC]
+JUMP 	Z, read_challenge
+COMPARE UART_data, character_V     ; Send received challenge [PICO <- PC]
+JUMP 	Z, send_challenge
+COMPARE UART_data, CHAR_S          ; Start PUF evaluation [PICO <- PC]
+JUMP 	Z, evaluate_PUF
+COMPARE UART_data, CHAR_W          ; Waiting for response [PICO <- PC]
+JUMP 	Z, check_resp_status
+;COMPARE UART_data, CHAR_N         ; Resend response [PICO <- PC]
+;JUMP 	Z, resend_response
+JUMP 	COMMAND_Loop
+
+;*******************************				
+; For connection reachability
+ send_reply: 
+;*******************************
+;INPUT UART_data, UART_Rx_PORT_I
+;CALL   write_character
+LOAD UART_data, character_Y
+CALL   write_character
+;CALL  test_v_msg
+;LOAD UART_data, character_E
+;CALL   write_character
+;LOAD UART_data, character_S
+;CALL   write_character
+JUMP COMMAND_Loop
+
+;**********************************************
+ read_character: ;Read a character from UART_Rx
+;**********************************************
+INPUT s0, UART_STATUS_PORT_I
+TEST  s0, rx_data_present
+JUMP Z, read_character
+INPUT UART_data, UART_Rx_PORT_I ;read from FIFO 
+RETURN
+
+;***********************************************
+ write_character: ; Write a character to UART_Tx
+;***********************************************
+INPUT s0, UART_STATUS_PORT_I
+TEST  s0, tx_full
+JUMP NZ, write_character
+OUTPUT UART_data, UART_Tx_PORT_O
+RETURN
+
+;***********************************************
+read_challenge: ; Read Challenge bytes from PC and 
+;store in scratchpad memory
+;***********************************************
+CALL read_character
+LOAD nWORD, UART_data             ; Number of 64-bit words
+LOAD ADDR_REG, C_BASE_ADDR
+
+STORE nWORD, (ADDR_REG)           ; First location contains number of challenge words
+ADD ADDR_REG, 01
+
+LOAD s1, 00                       ; reset the loop counter 
+L1_START:
+		COMPARE s1, nWORD   
+		JUMP NC, L1_END
+		LOAD s2, 00  
+L2_START:	
+		COMPARE s2, WSIZE         ; Word size in Bytes   
+		JUMP NC, L2_END
+		CALL read_character
+		STORE UART_data, (ADDR_REG)   
+		ADD ADDR_REG, 01
+		ADD s2, 01
+		JUMP L2_START
+L2_END:
+		ADD s1, 01
+		JUMP L1_START 
+L1_END:
+
+JUMP COMMAND_Loop
+
+;***************************************
+;Service Routine for command V
+ send_challenge : ; send 8 byte challenges to PC
+;***************************************
+LOAD  UART_data, character_B       ; tells host(PC) application that next bytes are challenges.
+CALL  write_character
+
+;CALL read_character
+
+LOAD ADDR_REG, C_BASE_ADDR
+FETCH nWORD, (ADDR_REG)      ; Number of 64-bit words
+ADD ADDR_REG, 01
+
+LOAD s1, 00                  ; reset the loop counter 
+L1_START_V:
+		COMPARE s1, nWORD   
+		JUMP NC, L1_END_V
+		LOAD s2, 00  
+L2_START_V:	
+		COMPARE s2, WSIZE         ; Word size in Bytes   
+		JUMP NC, L2_END_V
+		FETCH UART_data, (ADDR_REG)
+		CALL  write_character
+		ADD ADDR_REG, 01
+		ADD s2, 01
+		JUMP L2_START_V
+L2_END_V:
+		ADD s1, 01
+		JUMP L1_START_V 
+L1_END_V:
+
+JUMP  COMMAND_Loop
+
+;;*********************************************	
+;;Service Routine for command S
+;;Apply challenge to PUF and wait for response
+;;This is for evaluating IPUF
+; evaluate_PUF  :  ;[controlling PUF activities]
+;;*********************************************
+;;Initialize control signals
+;LOAD   s0, 00     
+;OUTPUT s0, CHAL_EN_PORT_O              
+;OUTPUT s0, CHAL_10_PORT_O      ; tigSignal = 0 for upper XOR APUF
+;OUTPUT s0, CHAL_11_PORT_O      ; tigSignal = 0 for lower XOR APUF
+;
+;; Send challenge to User logic
+;LOAD ADDR_REG, C_BASE_ADDR
+;FETCH nWORD, (ADDR_REG)      ; Number of 64-bit words
+;ADD ADDR_REG, 01
+;
+;LOAD   s0, 01     
+;OUTPUT s0, CHAL_EN_PORT_O
+;
+;;LOAD WID, 01                 ; Word ID 
+;
+;LOAD s1, 00                  ; reset the loop counter 
+;L1_START_S:
+;        LOAD s3, 00
+;		OUTPUT s3, CHAL_16_PORT_O        ; write word enable
+;		
+;		COMPARE s1, nWORD   
+;		JUMP NC, L1_END_S
+;		
+;		LOAD s2, 00  		
+;		OUTPUT s1, CHAL_1_PORT_O        ; Word ID
+;		LOAD CPORT_ID, CHAL_2_PORT_O
+;		
+;L2_START_S:	
+;		COMPARE s2, WSIZE               ; Word size in Bytes   
+;		JUMP NC, L2_END_S
+;		
+;		FETCH s0, (ADDR_REG)
+;		OUTPUT s0, (CPORT_ID)
+;		ADD CPORT_ID, 01
+;		ADD ADDR_REG, 01
+;		ADD s2, 01
+;		JUMP L2_START_S
+;L2_END_S:
+;		LOAD s3, 01
+;		OUTPUT s3, CHAL_16_PORT_O        ; write word enable
+;		
+;		; Delay 
+;		LOAD   s0, 1f
+;		CALL   delay
+;		
+;		ADD s1, 01
+;		JUMP L1_START_S 
+;L1_END_S:
+;
+;
+;; Delay 
+;LOAD   s0, 0f
+;CALL   delay
+;
+;; Trigger APUFs in the upper XOR APUF
+;LOAD   s0, 01                   
+;OUTPUT s0, CHAL_10_PORT_O      ; tigSignal = 1 for upper XOR APUF
+;
+;; Response ready status for upper XOR APUF
+;W_LOOP:
+;INPUT   s0, RESP_16_PORT_I
+;COMPARE s0, 01
+;JUMP    NZ, W_LOOP
+;
+;; Delay 
+;LOAD   s0, 0f
+;CALL   delay
+;
+;; Trigger APUFs in the upper XOR APUF
+;LOAD   s0, 01                   
+;OUTPUT s0, CHAL_11_PORT_O      ; tigSignal = 1 for lower XOR APUF
+;
+;; Inform PC that PUF evaluation is in progress
+;LOAD   UART_data, CHAR_Q        
+;CALL   write_character
+;
+;JUMP  COMMAND_Loop
+;
+
+;*********************************************	
+;Service Routine for command S
+;Apply challenge to PUF and wait for response
+;evaluating XORPUF
+ evaluate_PUF  :  ;[controlling PUF activities]
+;*********************************************
+;Initialize control signals
+LOAD   s0, 00     
+OUTPUT s0, CHAL_EN_PORT_O              
+OUTPUT s0, CHAL_10_PORT_O      ; tigSignal = 0 for upper XOR APUF
+
+; Send challenge to User logic
+LOAD ADDR_REG, C_BASE_ADDR
+FETCH nWORD, (ADDR_REG)      ; Number of 64-bit words
+ADD ADDR_REG, 01
+
+LOAD   s0, 01     
+OUTPUT s0, CHAL_EN_PORT_O
+
+;LOAD WID, 01                 ; Word ID 
+
+LOAD s1, 00                  ; reset the loop counter 
+L1_START_S:
+        LOAD s3, 00
+		OUTPUT s3, CHAL_16_PORT_O        ; write word enable
+		
+		COMPARE s1, nWORD   
+		JUMP NC, L1_END_S
+		
+		LOAD s2, 00  		
+		OUTPUT s1, CHAL_1_PORT_O        ; Word ID
+		LOAD CPORT_ID, CHAL_2_PORT_O
+		
+L2_START_S:	
+		COMPARE s2, WSIZE               ; Word size in Bytes   
+		JUMP NC, L2_END_S
+		
+		FETCH s0, (ADDR_REG)
+		OUTPUT s0, (CPORT_ID)
+		ADD CPORT_ID, 01
+		ADD ADDR_REG, 01
+		ADD s2, 01
+		JUMP L2_START_S
+L2_END_S:
+		LOAD s3, 01
+		OUTPUT s3, CHAL_16_PORT_O        ; write word enable
+		
+		; Delay 
+		LOAD   s0, 1f
+		CALL   delay
+		
+		ADD s1, 01
+		JUMP L1_START_S 
+L1_END_S:
+
+
+; Delay 
+LOAD   s0, 0f
+CALL   delay
+
+; Trigger APUFs in the upper XOR APUF
+LOAD   s0, 01                   
+OUTPUT s0, CHAL_10_PORT_O      ; tigSignal = 1 for upper XOR APUF
+
+; Delay 
+LOAD   s0, 0f
+CALL   delay
+
+; Inform PC that PUF evaluation is in progress
+LOAD   UART_data, CHAR_Q        
+CALL   write_character
+
+JUMP  COMMAND_Loop
+
+;*****************************************
+; Check response status 
+ check_resp_status:
+;*****************************************
+; Delay 
+LOAD   s0, ff
+CALL   delay
+
+; Response ready status 
+INPUT   s0, RESP_READY_PORT_I
+COMPARE s0, 01
+JUMP    Z, send_response
+
+; Evaluation is still going on. 
+LOAD    UART_data, CHAR_E
+CALL    write_character 
+JUMP COMMAND_Loop
+
+;*****************************************
+; Send all responses
+ send_response:
+;*****************************************
+
+; Delay
+;LOAD   s0, ff
+;CALL   delay
+
+; Inform PC that PUF evaluation is done and next bytes are responses
+LOAD   UART_data, CHAR_F
+CALL   write_character              
+
+;INPUT  RESP_data, RESP_5_PORT_I   
+;LOAD   UART_data, RESP_data       
+;CALL   write_character
+
+INPUT  RESP_data, RESP_4_PORT_I   
+LOAD   UART_data, RESP_data       
+CALL   write_character
+
+INPUT  RESP_data, RESP_3_PORT_I   
+LOAD   UART_data, RESP_data       
+CALL   write_character
+
+INPUT  RESP_data, RESP_2_PORT_I   
+LOAD   UART_data, RESP_data       
+CALL   write_character
+
+INPUT  RESP_data, RESP_1_PORT_I   
+LOAD   UART_data, RESP_data       
+CALL   write_character
+
+; Go back to command menu
+JUMP   COMMAND_Loop
+
+;*****************************************
+;Delay Routine
+delay: 
+;Put no. of NOP operation you want inside 
+;delay routine in register s0.
+;*****************************************
+COMPARE s0, 00
+RETURN Z
+LOAD s0, s0  ; NOP operation
+SUB s0, 01
+JUMP delay
+		
+;**************************************
+ wait_for_response_L0:
+;**************************************
+INPUT s0, RESP_1_PORT_I
+COMPARE s0, 01
+RETURN Z
+; Delay
+LOAD   s0, 0f
+CALL   delay
+JUMP wait_for_response_L0
+
+;**************************************
+; Test message [to verify rechability]
+ test_v_msg:
+;**************************************
+LOAD UART_data, character_T
+CALL write_character
+LOAD UART_data, character_E
+CALL write_character
+LOAD UART_data, character_S
+CALL write_character
+LOAD UART_data, character_T
+CALL write_character
+RETURN
+
+; ASCII table
+;******************************************************************
+CONSTANT character_a, 61
+CONSTANT character_b, 62
+CONSTANT character_c, 63
+CONSTANT character_d, 64
+CONSTANT character_e, 65
+CONSTANT character_f, 66
+CONSTANT character_g, 67
+CONSTANT character_h, 68
+CONSTANT character_i, 69
+CONSTANT character_j, 6A
+CONSTANT character_k, 6B
+CONSTANT character_l, 6C
+CONSTANT character_m, 6D
+CONSTANT character_n, 6E
+CONSTANT character_o, 6F
+CONSTANT character_p, 70
+CONSTANT character_q, 71
+CONSTANT character_r, 72
+CONSTANT character_s, 73
+CONSTANT character_t, 74
+CONSTANT character_u, 75
+CONSTANT character_v, 76
+CONSTANT character_w, 77
+CONSTANT character_x, 78
+CONSTANT character_y, 79
+CONSTANT character_z, 7A
+CONSTANT character_A, 41
+CONSTANT character_B, 42
+CONSTANT character_C, 43
+CONSTANT character_D, 44
+CONSTANT character_E, 45
+CONSTANT character_F, 46
+CONSTANT character_G, 47
+CONSTANT character_H, 48
+CONSTANT character_I, 49
+CONSTANT character_J, 4A
+CONSTANT character_K, 4B
+CONSTANT character_L, 4C
+CONSTANT character_M, 4D
+CONSTANT character_N, 4E
+CONSTANT character_O, 4F
+CONSTANT character_P, 50
+CONSTANT character_Q, 51
+CONSTANT character_R, 52
+CONSTANT character_S, 53
+CONSTANT character_T, 54
+CONSTANT character_U, 55
+CONSTANT character_V, 56
+CONSTANT character_W, 57
+CONSTANT character_X, 58
+CONSTANT character_Y, 59
+CONSTANT character_Z, 5A
+CONSTANT character_0, 30
+CONSTANT character_1, 31
+CONSTANT character_2, 32
+CONSTANT character_3, 33
+CONSTANT character_4, 34
+CONSTANT character_5, 35
+CONSTANT character_6, 36
+CONSTANT character_7, 37
+CONSTANT character_8, 38
+CONSTANT character_9, 39
+CONSTANT character_colon, 3A
+CONSTANT character_semi_colon, 3B
+CONSTANT character_less_than, 3C
+CONSTANT character_greater_than, 3E
+CONSTANT character_equals, 3D
+CONSTANT character_space, 20
+CONSTANT character_CR, 0D       ;carriage return
+CONSTANT character_question, 3F ;'?'
+CONSTANT character_dollar, 24
+CONSTANT character_BS, 08 ;Back Space command character
+
+;************************* END ************************

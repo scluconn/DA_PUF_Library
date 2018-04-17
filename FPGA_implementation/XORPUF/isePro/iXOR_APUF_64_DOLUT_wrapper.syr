@@ -1,0 +1,1290 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: iXOR_APUF_64_DOLUT_wrapper.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "iXOR_APUF_64_DOLUT_wrapper.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "iXOR_APUF_64_DOLUT_wrapper"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : iXOR_APUF_64_DOLUT_wrapper
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\GitHub\IPUF\XORPUF\src\veriolg\sw_dolut\sw_dolut.v" into library work
+Parsing module <sw_dolut>.
+Analyzing Verilog file "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\switchChain.v" into library work
+Parsing module <switchChain>.
+Analyzing Verilog file "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\nandLatch.v" into library work
+Parsing module <nandLatch>.
+Analyzing Verilog file "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\uart_tx6.v" into library work
+Parsing module <uart_tx6>.
+Analyzing Verilog file "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\uart_rx6.v" into library work
+Parsing module <uart_rx6>.
+Analyzing Verilog file "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\program.v" into library work
+Parsing module <program>.
+Parsing module <jtag_loader_6>.
+Analyzing Verilog file "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\kcpsm6.v" into library work
+Parsing module <kcpsm6>.
+Analyzing Verilog file "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic.v" into library work
+Parsing module <apufClassic>.
+Analyzing Verilog file "D:\GitHub\IPUF\XORPUF\src\veriolg\xorpuf\xorpuf.v" into library work
+Parsing module <xor_apuf>.
+Analyzing Verilog file "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\puf_controller_6.v" into library work
+Parsing module <puf_controller>.
+Analyzing Verilog file "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v" into library work
+Parsing module <iXOR_APUF_64_DOLUT_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <iXOR_APUF_64_DOLUT_wrapper>.
+
+Elaborating module <xor_apuf(N=64,K=8)>.
+
+Elaborating module <apufClassic(nStage=64)>.
+
+Elaborating module <switchChain(nStage=64)>.
+
+Elaborating module <sw_dolut>.
+
+Elaborating module <LUT6_2(INIT=64'b1100110011001100101010101010101010101010101010101100110011001100)>.
+
+Elaborating module <nandLatch>.
+
+Elaborating module <LUT2(INIT=4'b0111)>.
+WARNING:HDLCompiler:413 - "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v" Line 57: Result of 8-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <puf_controller(CLOCK_FRE=100000000,BAUD_RATE=19200)>.
+
+Elaborating module <kcpsm6(interrupt_vector=12'b01111111111,scratch_pad_memory_size=64,hwbuild=8'b0)>.
+
+Elaborating module <LUT6_2(INIT=64'b1111111111111111111101010101010100000000000000000000111011101110)>.
+
+Elaborating module <FD>.
+
+Elaborating module <LUT6_2(INIT=64'b010000011000000000000101100000000110001000000000001001100)>.
+
+Elaborating module <LUT6_2(INIT=64'b010000000000000000000000000000000000000000100000000000)>.
+
+Elaborating module <LUT6(INIT=64'b01100101010101010)>.
+
+Elaborating module <LUT6_2(INIT=64'b1100110000110011111111110000000010000000100000001000000010000000)>.
+
+Elaborating module <LUT6(INIT=64'b0101101000111100111111111111111100000000000000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b0111011101110111000000100111011100000000000000000000001000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b0111100000000000000000000000000000010001111111111)>.
+
+Elaborating module <LUT6(INIT=64'b1111111111111111111111111111111100000000000001000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b1111111111111111000100000000000000000000000000000010000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b01111001010000000000000000000000100001000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b0111011100001000000000000000000000000000000000000000111100000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b1101000000000000000000000000000000000010000000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b01001111110011111100000000000100001111011111001110)>.
+
+Elaborating module <LUT6_2(INIT=64'b1100000011001100000000000000000010100000101010100000000000000000)>.
+
+Elaborating module <FDR>.
+
+Elaborating module <LUT6_2(INIT=64'b1000000000000000000000000000000000100000000000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b0100000000000000000000000000000000000001000000000000000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b010000000000000100000000000000000000000000000000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b1010110010101100111111110000000011111111000000001111111100000000)>.
+
+Elaborating module <XORCY>.
+
+Elaborating module <LUT6_2(INIT=64'b010000111011110000000000000000000)>.
+
+Elaborating module <MUXCY>.
+
+Elaborating module <LUT6(INIT=64'b0110100110010110100101100110100110010110011010010110100110010110)>.
+
+Elaborating module <LUT6(INIT=64'b1111111111111111101010101100110011110000111100001111000011110000)>.
+
+Elaborating module <LUT6_2(INIT=64'b011001100110011101010101100110011110000101010100000000000000000)>.
+
+Elaborating module <FDRE>.
+
+Elaborating module <LUT6_2(INIT=64'b1010001010000000000000000000000000000000111100000000000011110000)>.
+
+Elaborating module <LUT6_2(INIT=64'b01)>.
+
+Elaborating module <LUT6_2(INIT=64'b0110100000000000000000000000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b1111101111111111000000000000000000000000000000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b1111111100000000111100001111000011001100110011001010101010101010)>.
+
+Elaborating module <LUT6(INIT=64'b010101010000000001111111100110011110011000000111100000000)>.
+
+Elaborating module <LUT6(INIT=64'b010101010000000001111111111001100110011001111000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b010101010000000000000000011001100110011001111000000000000)>.
+
+Elaborating module <RAM32M(INIT_A=64'b0,INIT_B=64'b0,INIT_C=64'b0,INIT_D=64'b0)>.
+
+Elaborating module <LUT6_2(INIT=64'b010101001010011010101010101010101010101010101010101010)>.
+
+Elaborating module <LUT6_2(INIT=64'b0101010001001010010101010101010101010101010101010101010)>.
+
+Elaborating module <LUT6_2(INIT=64'b0110100101101001011011101000101011001100110011000000000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b1011111110111100100011111000110010110011101100001000001110000000)>.
+
+Elaborating module <LUT6(INIT=64'b1111111100000000111100001111000011001100110011001010101010101010)>.
+
+Elaborating module <RAM64M(INIT_A=64'b0,INIT_B=64'b0,INIT_C=64'b0,INIT_D=64'b0)>.
+WARNING:HDLCompiler:189 - "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\puf_controller_6.v" Line 150: Size mismatch in connection of port <address>. Formal port size is 12-bit while actual signal size is 10-bit.
+WARNING:HDLCompiler:1127 - "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\puf_controller_6.v" Line 155: Assignment to k_write_strobe ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\puf_controller_6.v" Line 160: Assignment to interrupt_ack ignored, since the identifier is never used
+
+Elaborating module <program(C_FAMILY="7S",C_RAM_SIZE_KWORDS=2,C_JTAG_LOADER_ENABLE=0)>.
+
+Elaborating module
+<RAMB36E1(READ_WIDTH_A=18,WRITE_WIDTH_A=18,DOA_REG=0,INIT_A=36'b0,RSTREG_PRIORITY_A="REGCE",SRVAL_A=36'b0,WRITE_MODE_A="WRITE_FIRST",READ_WIDTH_B=18,WRITE_WIDTH_B=18,DOB_REG=0,INIT_B=36'b0,RSTREG_PRIORITY_B="REGCE",SRVAL_B=36'b0,WRITE_MODE_B="WRITE_FIRST",INIT_FILE="NONE",SIM_COLLISION_CHECK="ALL",RAM_MODE="TDP",RDADDR_COLLISION_HWCONFIG="DELAYED_WRITE",EN_ECC_READ="FALSE",EN_ECC_WRITE="FALSE",RAM_EXTENSION_A="NONE",RAM_EXTENSION_B="NONE",SIM_DEVICE="7SERIES",INIT_00=256'b010000000011001110111110100000110011111000000010010000000001010110100000001000010010000000000000000000000100001000111110110111100000000001000010001111101101100000000000010000100011111011011000000000000100001000111110110010100000000001000010001111101101000,INIT_01=256'b1001111100000001001000000001110011010000000100001001000000000000001000000000101000000000001000010001111101011001001000000000101000100000011100111101111101010111001000000100110011011111010100110010000000111001110111110101011000100000001001101101111101000011,INIT_02=256'b11010010
+00001000000100100000000011100000001110001100000111010000000100010000000000011100000000011110110111000000000111000000000000001101111100000000000000011100010100000000000011011111000100010110000000100001110100000000001010010000000000000101000000000000,INIT_03=256'b1100000111010000000100010000000000011100000000011010110111000000000111000000000000000000001000010001111101000010001000000000101000100000001011000001000100000001001000000010111100010010000000010001110000000001111011111100000000000000000111001110000000110110,INIT_04=256'b01110000000000110100000000100111010000000100000001000000000000001000000000101000100000001111110001000100000001001000000100001000010010000000010001110000000001000000000010000110101111110000001110000001001001110100100000100000010010000000001110000001001011,INIT_05=256'b11000000101000001010000011000000111000000110010011010010000010000001101000000001110100010000000000010010000000001110000001101010110000011101000011010011000011110001001100000000000100010000000011010000000100000001000000000001
+00011100000000011010110111000000,INIT_06=256'b010000100000100000000111111010000000010010001000000000001000000001000010000010000000011110010000001010101000100010000000100000000100001000001000000011111110100110000111100010011000000010010000001011100000100100000000100011100000000010001101000000001,INIT_07=256'b0100001000011111110000010011110000001000000000000100001000111110100011000100000000010100000000000100001000111110100010100100000011110111101000000000001100100000000001000000000100001000001000011111111001000000000101000000000001000010001111101010001,INIT_08=256'b01111101010100001000001000100100000000100001000001000000001111000100000000000011010000000000011001000000000011001000001000010010010000000000010000000000000000000100000000000011010000000000000010000000001010000000000010000100001111111000001001111000000011,INIT_09=256'b01010000000000000000000000100001000111110101010000000000001000010001111101010011000000000010000100011111010001010000000000100001,INIT_0A=256'b0,INIT_0B=256'b0,INIT_0C=256'b0,INIT_0D=256'
+b0,INIT_0E=256'b0,INIT_0F=256'b0,INIT_10=256'b0,INIT_11=256'b0,INIT_12=256'b0,INIT_13=256'b0,INIT_14=256'b0,INIT_15=256'b0,INIT_16=256'b0,INIT_17=256'b0,INIT_18=256'b0,INIT_19=256'b0,INIT_1A=256'b0,INIT_1B=256'b0,INIT_1C=256'b0,INIT_1D=256'b0,INIT_1E=256'b0,INIT_1F=256'b0,INIT_20=256'b0,INIT_21=256'b0,INIT_22=256'b0,INIT_23=256'b0,INIT_24=256'b0,INIT_25=256'b0,INIT_26=256'b0,INIT_27=256'b0,INIT_28=256'b0,INIT_29=256'b0,INIT_2A=256'b0,INIT_2B=256'b0,INIT_2C=256'b0,INIT_2D=256'b0,INIT_2E=256'b0,INIT_2F=256'b0,INIT_30=256'b0,INIT_31=256'b0,INIT_32=256'b0,INIT_33=256'b0,INIT_34=256'b0,INIT_35=256'b0,INIT_36=256'b0,INIT_37=256'b0,INIT_38=256'b0,INIT_39=256'b0,INIT_3A=256'b0,INIT_3B=256'b0,INIT_3C=256'b0,INIT_3D=256'b0,INIT_3E=256'b0,INIT_3F=256'b0,INIT_40=256'b0,INIT_41=256'b0,INIT_42=256'b0,INIT_43=256'b0,INIT_44=256'b0,INIT_45=256'b0,INIT_46=256'b0,INIT_47=256'b0,INIT_48=256'b0,INIT_49=256'b0,INIT_4A=256'b0,INIT_4B=256'b0,INIT_4C=256'b0,INIT_4D=256'b0,INIT_4E=256'b0,INIT_4F=256'b0,INIT_50=256'b0,INIT_51=256'b0,I
+NIT_52=256'b0,INIT_53=256'b0,INIT_54=256'b0,INIT_55=256'b0,INIT_56=256'b0,INIT_57=256'b0,INIT_58=256'b0,INIT_59=256'b0,INIT_5A=256'b0,INIT_5B=256'b0,INIT_5C=256'b0,INIT_5D=256'b0,INIT_5E=256'b0,INIT_5F=256'b0,INIT_60=256'b0,INIT_61=256'b0,INIT_62=256'b0,INIT_63=256'b0,INIT_64=256'b0,INIT_65=256'b0,INIT_66=256'b0,INIT_67=256'b0,INIT_68=256'b0,INIT_69=256'b0,INIT_6A=256'b0,INIT_6B=256'b0,INIT_6C=256'b0,INIT_6D=256'b0,INIT_6E=256'b0,INIT_6F=256'b0,INIT_70=256'b0,INIT_71=256'b0,INIT_72=256'b0,INIT_73=256'b0,INIT_74=256'b0,INIT_75=256'b0,INIT_76=256'b0,INIT_77=256'b0,INIT_78=256'b0,INIT_79=256'b0,INIT_7A=256'b0,INIT_7B=256'b0,INIT_7C=256'b0,INIT_7D=256'b0,INIT_7E=256'b0,INIT_7F=256'b0,INITP_00=256'b1000001000101000110100100010100010001000100010011000100010010101100011010010001101100000100001000010100010100110010110001101001101000100001000101001100101101011010011010001100000101010110000100011000010100010110111011101110111010011000010001000100010001000,INITP_01=256'b0101000100010001000101000110100100100110110100000,
+INITP_02=256'b0,INITP_03=256'b0,INITP_04=256'b0,INITP_05=256'b0,INITP_06=256'b0,INITP_07=256'b0,INITP_08=256'b0,INITP_09=256'b0,INITP_0A=256'b0,INITP_0B=256'b0,INITP_0C=256'b0,INITP_0D=256'b0,INITP_0E=256'b0,INITP_0F=256'b0>.
+WARNING:HDLCompiler:189 - "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\puf_controller_6.v" Line 187: Size mismatch in connection of port <address>. Formal port size is 12-bit while actual signal size is 10-bit.
+
+Elaborating module <uart_tx6>.
+
+Elaborating module <SRL16E(INIT=16'b0)>.
+
+Elaborating module <LUT6(INIT=64'b1111111100000000111111100000000011111111100000001111111100000000)>.
+
+Elaborating module <LUT6(INIT=64'b1111000011110000111000011110000011111000011110001111000011110000)>.
+
+Elaborating module <LUT6_2(INIT=64'b1100110010010000011000001100110010101010010100000101000010101010)>.
+
+Elaborating module <LUT6_2(INIT=64'b1111010011111100111101001111110000000100000000000000010011000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b01000000000000000010000000000000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b1100111110101010110011000000111100001111111111111111111111111111)>.
+
+Elaborating module <LUT6(INIT=64'b1000010101010000000000000000000010101010101010101010101010101010)>.
+
+Elaborating module <LUT6(INIT=64'b010011001100001000000000000000011001100110011001100110011001100)>.
+
+Elaborating module <LUT6(INIT=64'b1000100001110000000000000000000011110000111100001111000011110000)>.
+
+Elaborating module <LUT6(INIT=64'b1000011101000100000000000000000011111111000000001111111100000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b0110110000000000000000000000000001011010000000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b0111111110000000111111110000000001111000011110001111000011110000)>.
+
+Elaborating module <LUT6_2(INIT=64'b010000000000000000000000000000000)>.
+
+Elaborating module <uart_rx6>.
+
+Elaborating module <LUT6_2(INIT=64'b1100110011110000000000000000000010101010110011000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b1100101011111111110010101111111100000000000000001100000011000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b1111000011001100111111111111111111001100101010101111111111111111)>.
+
+Elaborating module <LUT6(INIT=64'b010111100101111101011111010111100000000000000001111111100000000)>.
+
+Elaborating module <LUT6(INIT=64'b010001000100010000000001111000000000000000000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b0110110011001100000000000000000001011010101010100000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b010000000000000000000000010001000100010001000100010001000)>.
+WARNING:HDLCompiler:413 - "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\puf_controller_6.v" Line 545: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:189 - "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v" Line 90: Size mismatch in connection of port <RESP_1_PORT>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v" Line 117: Size mismatch in connection of port <CHAl_10_PORT>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v" Line 123: Size mismatch in connection of port <CHAl_16_PORT>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:552 - "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v" Line 87: Input port RESP_3_PORT[7] is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <iXOR_APUF_64_DOLUT_wrapper>.
+    Related source file is "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v".
+    Set property "KEEP_HIERARCHY = TRUE" for instance <XAPUF>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <PUF_CU>.
+    Set property "CLOCK_SIGNAL = yes" for signal <clk>.
+WARNING:Xst:2898 - Port 'RESP_3_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_4_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_5_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_6_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_7_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_8_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_9_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_10_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_11_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_12_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_13_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_14_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_15_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+WARNING:Xst:2898 - Port 'RESP_16_PORT', unconnected in block instance 'PUF_CU', is tied to GND.
+INFO:Xst:3210 - "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v" line 87: Output port <CHAl_11_PORT> of the instance <PUF_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v" line 87: Output port <CHAl_12_PORT> of the instance <PUF_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v" line 87: Output port <CHAl_13_PORT> of the instance <PUF_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v" line 87: Output port <CHAl_14_PORT> of the instance <PUF_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v" line 87: Output port <CHAl_15_PORT> of the instance <PUF_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic_wrapper.v" line 87: Output port <PUF_START_PORT> of the instance <PUF_CU> is unconnected or connected to loadless signal.
+    Found 64-bit register for signal <challenge>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <iXOR_APUF_64_DOLUT_wrapper> synthesized.
+
+Synthesizing Unit <xor_apuf>.
+    Related source file is "D:\GitHub\IPUF\XORPUF\src\veriolg\xorpuf\xorpuf.v".
+        N = 64
+        K = 8
+    Set property "KEEP_HIERARCHY = TRUE" for instance <PUFList[0].APUF>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <PUFList[1].APUF>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <PUFList[2].APUF>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <PUFList[3].APUF>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <PUFList[4].APUF>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <PUFList[5].APUF>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <PUFList[6].APUF>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <PUFList[7].APUF>.
+    Summary:
+Unit <xor_apuf> synthesized.
+
+Synthesizing Unit <apufClassic>.
+    Related source file is "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic.v".
+        nStage = 64
+    Set property "KEEP_HIERARCHY = TRUE" for instance <SWITCH_CHAIN>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <ARBITER>.
+INFO:Xst:3210 - "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\apufClassic.v" line 61: Output port <qbar> of the instance <ARBITER> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <tigReg>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <apufClassic> synthesized.
+
+Synthesizing Unit <switchChain>.
+    Related source file is "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\switchChain.v".
+        nStage = 64
+    Summary:
+	no macro.
+Unit <switchChain> synthesized.
+
+Synthesizing Unit <sw_dolut>.
+    Related source file is "D:\GitHub\IPUF\XORPUF\src\veriolg\sw_dolut\sw_dolut.v".
+    Summary:
+	no macro.
+Unit <sw_dolut> synthesized.
+
+Synthesizing Unit <nandLatch>.
+    Related source file is "D:\GitHub\IPUF\XORPUF\src\veriolg\apuf\nandLatch.v".
+    Set property "KEEP_HIERARCHY = TRUE" for instance <X>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <Y>.
+    Summary:
+	no macro.
+Unit <nandLatch> synthesized.
+
+Synthesizing Unit <puf_controller>.
+    Related source file is "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\puf_controller_6.v".
+        CLOCK_FRE = 100000000
+        BAUD_RATE = 19200
+    Set property "KEEP_HIERARCHY = TRUE" for instance <processor>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <program_rom>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <transmitter>.
+    Set property "KEEP_HIERARCHY = TRUE" for instance <receiver>.
+INFO:Xst:3210 - "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\puf_controller_6.v" line 149: Output port <k_write_strobe> of the instance <processor> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\puf_controller_6.v" line 149: Output port <interrupt_ack> of the instance <processor> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\puf_controller_6.v" line 197: Output port <buffer_data_present> of the instance <transmitter> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <read_from_uart>.
+    Found 8-bit register for signal <CHAl_1_PORT>.
+    Found 8-bit register for signal <CHAl_2_PORT>.
+    Found 8-bit register for signal <CHAl_3_PORT>.
+    Found 8-bit register for signal <CHAl_4_PORT>.
+    Found 8-bit register for signal <CHAl_5_PORT>.
+    Found 8-bit register for signal <CHAl_6_PORT>.
+    Found 8-bit register for signal <CHAl_7_PORT>.
+    Found 8-bit register for signal <CHAl_8_PORT>.
+    Found 8-bit register for signal <CHAl_9_PORT>.
+    Found 8-bit register for signal <CHAl_10_PORT>.
+    Found 8-bit register for signal <CHAl_11_PORT>.
+    Found 8-bit register for signal <CHAl_12_PORT>.
+    Found 8-bit register for signal <CHAl_13_PORT>.
+    Found 8-bit register for signal <CHAl_14_PORT>.
+    Found 8-bit register for signal <CHAl_15_PORT>.
+    Found 8-bit register for signal <CHAl_16_PORT>.
+    Found 1-bit register for signal <CHAL_EN_PORT>.
+    Found 1-bit register for signal <PUF_START_PORT>.
+    Found 10-bit register for signal <baud_count>.
+    Found 1-bit register for signal <en_16_x_baud>.
+    Found 8-bit register for signal <in_port>.
+    Found 10-bit adder for signal <baud_count[9]_GND_9_o_add_76_OUT> created at line 545.
+    Found 32x19-bit Read Only RAM for signal <port_en>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred 150 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <puf_controller> synthesized.
+
+Synthesizing Unit <kcpsm6>.
+    Related source file is "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\kcpsm6.v".
+        hwbuild = 8'b00000000
+        interrupt_vector = 12'b001111111111
+        scratch_pad_memory_size = 64
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <reset_lut>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <run_flop>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <internal_reset_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <sync_sleep_flop>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <t_state_lut>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <t_state1_flop>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <t_state2_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE0" for instance <int_enable_type_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE0" for instance <interrupt_enable_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE0" for instance <interrupt_enable_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <sync_interrupt_flop>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <active_interrupt_lut>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <active_interrupt_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <interrupt_ack_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE0" for instance <pc_move_is_valid_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE0" for instance <move_type_lut>.
+    Set property "HBLKNM = KCPSM6_VECTOR1" for instance <pc_mode1_lut>.
+    Set property "HBLKNM = KCPSM6_VECTOR1" for instance <pc_mode2_lut>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <push_pop_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <alu_decode0_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <alu_mux_sel0_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <alu_decode1_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <alu_mux_sel1_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <alu_decode2_lut>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <register_enable_type_lut>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <register_enable_lut>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <flag_enable_flop>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <register_enable_flop>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <spm_enable_lut>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <k_write_strobe_flop>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <spm_enable_flop>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <read_strobe_lut>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <write_strobe_flop>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <read_strobe_flop>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <regbank_type_lut>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <bank_lut>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <bank_flop>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <sx_addr4_flop>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <arith_carry_xorcy>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <arith_carry_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <lower_parity_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <parity_muxcy>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <upper_parity_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <parity_xorcy>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <shift_carry_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <shift_carry_flop>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <carry_flag_lut>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <carry_flag_flop>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <init_zero_muxcy>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <use_zero_flag_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <use_zero_flag_flop>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <lower_zero_lut>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <lower_zero_muxcy>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <middle_zero_lut>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <middle_zero_muxcy>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <upper_zero_lut>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <upper_zero_muxcy>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <zero_flag_flop>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <address_loop[0].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_VECTOR0" for instance <address_loop[0].output_data.pc_vector_mux_lut>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[0].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[0].lsb_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[0].lsb_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[0].lsb_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <address_loop[1].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[1].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[1].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[1].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[1].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <address_loop[2].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_VECTOR0" for instance <address_loop[2].output_data.pc_vector_mux_lut>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[2].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[2].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[2].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[2].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <address_loop[3].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[3].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[3].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[3].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[3].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[4].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_VECTOR0" for instance <address_loop[4].output_data.pc_vector_mux_lut>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[4].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[4].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[4].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[4].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[5].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[5].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[5].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[5].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[5].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[6].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_VECTOR0" for instance <address_loop[6].output_data.pc_vector_mux_lut>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[6].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[6].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[6].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[6].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[7].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[7].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[7].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[7].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[7].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[8].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_VECTOR1" for instance <address_loop[8].output_data.pc_vector_mux_lut>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[8].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[8].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[8].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[8].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[9].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[9].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[9].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[9].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[9].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[10].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_VECTOR1" for instance <address_loop[10].output_data.pc_vector_mux_lut>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[10].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[10].upper_pc.low_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[10].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[10].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[11].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[11].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[11].upper_pc.low_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[11].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <shadow_carry_flag_flop>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <stack_zero_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <shadow_zero_flag_flop>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <shadow_bank_flop>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <stack_bit_flop>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <stack_ram_low>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <stack_ram_high>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[0].lsb_stack.pointer_flop>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[0].lsb_stack.stack_pointer_lut>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[0].lsb_stack.stack_xorcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[0].lsb_stack.stack_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[1].upper_stack.pointer_flop>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[1].upper_stack.stack_pointer_lut>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[1].upper_stack.stack_xorcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[1].upper_stack.stack_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[2].upper_stack.pointer_flop>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[2].upper_stack.stack_pointer_lut>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[2].upper_stack.stack_xorcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[2].upper_stack.stack_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[3].upper_stack.pointer_flop>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[3].upper_stack.stack_pointer_lut>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[3].upper_stack.stack_xorcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[3].upper_stack.stack_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <stack_loop[4].upper_stack.pointer_flop>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <stack_loop[4].upper_stack.stack_pointer_lut>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <stack_loop[4].upper_stack.stack_xorcy>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <stack_loop[4].upper_stack.stack_muxcy>.
+    Set property "HBLKNM = KCPSM6_PORT_ID" for instance <data_path_loop[0].output_data.sy_kk_mux_lut>.
+    Set property "HBLKNM = KCPSM6_OUT_PORT" for instance <data_path_loop[0].second_operand.out_port_lut>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[0].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[0].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[0].lsb_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[0].lsb_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[0].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <data_path_loop[0].lsb_shift_rotate.shift_bit_lut>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[0].lsb_shift_rotate.shift_rotate_lut>.
+    Set property "HBLKNM = KCPSM6_ALU0" for instance <data_path_loop[0].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM0" for instance <data_path_loop[0].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[1].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[1].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[1].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[1].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[1].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_ALU0" for instance <data_path_loop[1].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM0" for instance <data_path_loop[1].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_PORT_ID" for instance <data_path_loop[2].output_data.sy_kk_mux_lut>.
+    Set property "HBLKNM = KCPSM6_OUT_PORT" for instance <data_path_loop[2].second_operand.out_port_lut>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[2].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[2].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[2].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[2].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[2].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[2].mid_shift_rotate.shift_rotate_lut>.
+    Set property "HBLKNM = KCPSM6_ALU0" for instance <data_path_loop[2].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM0" for instance <data_path_loop[2].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[3].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[3].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[3].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[3].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[3].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_ALU0" for instance <data_path_loop[3].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM0" for instance <data_path_loop[3].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_PORT_ID" for instance <data_path_loop[4].output_data.sy_kk_mux_lut>.
+    Set property "HBLKNM = KCPSM6_OUT_PORT" for instance <data_path_loop[4].second_operand.out_port_lut>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[4].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[4].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[4].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[4].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[4].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[4].mid_shift_rotate.shift_rotate_lut>.
+    Set property "HBLKNM = KCPSM6_ALU1" for instance <data_path_loop[4].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM1" for instance <data_path_loop[4].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[5].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[5].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[5].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[5].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[5].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_ALU1" for instance <data_path_loop[5].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM1" for instance <data_path_loop[5].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_PORT_ID" for instance <data_path_loop[6].output_data.sy_kk_mux_lut>.
+    Set property "HBLKNM = KCPSM6_OUT_PORT" for instance <data_path_loop[6].second_operand.out_port_lut>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[6].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[6].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[6].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[6].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[6].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[6].msb_shift_rotate.shift_rotate_lut>.
+    Set property "HBLKNM = KCPSM6_ALU1" for instance <data_path_loop[6].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM1" for instance <data_path_loop[6].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[7].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[7].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[7].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[7].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[7].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_ALU1" for instance <data_path_loop[7].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM1" for instance <data_path_loop[7].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_REG0" for instance <lower_reg_banks>.
+    Set property "HBLKNM = KCPSM6_REG1" for instance <upper_reg_banks>.
+    Summary:
+	no macro.
+Unit <kcpsm6> synthesized.
+
+Synthesizing Unit <program>.
+    Related source file is "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\program.v".
+        C_JTAG_LOADER_ENABLE = 0
+        C_FAMILY = "7S"
+        C_RAM_SIZE_KWORDS = 2
+        BRAM_ADDRESS_WIDTH = 11
+    Summary:
+	no macro.
+Unit <program> synthesized.
+
+Synthesizing Unit <uart_tx6>.
+    Related source file is "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\uart_tx6.v".
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[0].storage_srl>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[0].storage_flop>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[1].storage_srl>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[1].storage_flop>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[2].storage_srl>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[2].storage_flop>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[3].storage_srl>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[3].storage_flop>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[4].storage_srl>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[4].storage_flop>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[5].storage_srl>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[5].storage_flop>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[6].storage_srl>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[6].storage_flop>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[7].storage_srl>.
+    Set property "HBLKNM = UART_TX6_5" for instance <data_width_loop[7].storage_flop>.
+    Set property "HBLKNM = UART_TX6_1" for instance <pointer3_lut>.
+    Set property "HBLKNM = UART_TX6_1" for instance <pointer3_flop>.
+    Set property "HBLKNM = UART_TX6_1" for instance <pointer2_lut>.
+    Set property "HBLKNM = UART_TX6_1" for instance <pointer2_flop>.
+    Set property "HBLKNM = UART_TX6_1" for instance <pointer01_lut>.
+    Set property "HBLKNM = UART_TX6_1" for instance <pointer1_flop>.
+    Set property "HBLKNM = UART_TX6_1" for instance <pointer0_flop>.
+    Set property "HBLKNM = UART_TX6_1" for instance <data_present_lut>.
+    Set property "HBLKNM = UART_TX6_1" for instance <data_present_flop>.
+    Set property "HBLKNM = UART_TX6_4" for instance <full_lut>.
+    Set property "HBLKNM = UART_TX6_4" for instance <lsb_data_lut>.
+    Set property "HBLKNM = UART_TX6_4" for instance <msb_data_lut>.
+    Set property "HBLKNM = UART_TX6_4" for instance <serial_lut>.
+    Set property "HBLKNM = UART_TX6_4" for instance <serial_flop>.
+    Set property "HBLKNM = UART_TX6_2" for instance <sm0_lut>.
+    Set property "HBLKNM = UART_TX6_2" for instance <sm0_flop>.
+    Set property "HBLKNM = UART_TX6_2" for instance <sm1_lut>.
+    Set property "HBLKNM = UART_TX6_2" for instance <sm1_flop>.
+    Set property "HBLKNM = UART_TX6_2" for instance <sm2_lut>.
+    Set property "HBLKNM = UART_TX6_2" for instance <sm2_flop>.
+    Set property "HBLKNM = UART_TX6_2" for instance <sm3_lut>.
+    Set property "HBLKNM = UART_TX6_2" for instance <sm3_flop>.
+    Set property "HBLKNM = UART_TX6_3" for instance <div01_lut>.
+    Set property "HBLKNM = UART_TX6_3" for instance <div0_flop>.
+    Set property "HBLKNM = UART_TX6_3" for instance <div1_flop>.
+    Set property "HBLKNM = UART_TX6_3" for instance <div23_lut>.
+    Set property "HBLKNM = UART_TX6_3" for instance <div2_flop>.
+    Set property "HBLKNM = UART_TX6_3" for instance <div3_flop>.
+    Set property "HBLKNM = UART_TX6_3" for instance <next_lut>.
+    Set property "HBLKNM = UART_TX6_3" for instance <next_flop>.
+    Set property "HBLKNM = UART_TX6_3" for instance <read_flop>.
+    Summary:
+	no macro.
+Unit <uart_tx6> synthesized.
+
+Synthesizing Unit <uart_rx6>.
+    Related source file is "D:\GitHub\IPUF\XORPUF\src\veriolg\picoBlaze6\uart_rx6.v".
+    Set property "HBLKNM = UART_RX6_5" for instance <data_width_loop[0].storage_srl>.
+    Set property "HBLKNM = UART_RX6_5" for instance <data_width_loop[1].storage_srl>.
+    Set property "HBLKNM = UART_RX6_5" for instance <data_width_loop[2].storage_srl>.
+    Set property "HBLKNM = UART_RX6_5" for instance <data_width_loop[3].storage_srl>.
+    Set property "HBLKNM = UART_RX6_5" for instance <data_width_loop[4].storage_srl>.
+    Set property "HBLKNM = UART_RX6_5" for instance <data_width_loop[5].storage_srl>.
+    Set property "HBLKNM = UART_RX6_5" for instance <data_width_loop[6].storage_srl>.
+    Set property "HBLKNM = UART_RX6_5" for instance <data_width_loop[7].storage_srl>.
+    Set property "HBLKNM = UART_RX6_1" for instance <pointer3_lut>.
+    Set property "HBLKNM = UART_RX6_1" for instance <pointer3_flop>.
+    Set property "HBLKNM = UART_RX6_1" for instance <pointer2_lut>.
+    Set property "HBLKNM = UART_RX6_1" for instance <pointer2_flop>.
+    Set property "HBLKNM = UART_RX6_1" for instance <pointer01_lut>.
+    Set property "HBLKNM = UART_RX6_1" for instance <pointer1_flop>.
+    Set property "HBLKNM = UART_RX6_1" for instance <pointer0_flop>.
+    Set property "HBLKNM = UART_RX6_1" for instance <data_present_lut>.
+    Set property "HBLKNM = UART_RX6_1" for instance <data_present_flop>.
+    Set property "HBLKNM = UART_RX6_3" for instance <full_lut>.
+    Set property "HBLKNM = UART_RX6_4" for instance <sample_lut>.
+    Set property "HBLKNM = UART_RX6_4" for instance <sample_flop>.
+    Set property "HBLKNM = UART_RX6_4" for instance <sample_dly_flop>.
+    Set property "HBLKNM = UART_RX6_4" for instance <stop_bit_lut>.
+    Set property "HBLKNM = UART_RX6_4" for instance <buffer_write_flop>.
+    Set property "HBLKNM = UART_RX6_4" for instance <stop_bit_flop>.
+    Set property "HBLKNM = UART_RX6_2" for instance <data01_lut>.
+    Set property "HBLKNM = UART_RX6_2" for instance <data0_flop>.
+    Set property "HBLKNM = UART_RX6_2" for instance <data1_flop>.
+    Set property "HBLKNM = UART_RX6_2" for instance <data23_lut>.
+    Set property "HBLKNM = UART_RX6_2" for instance <data2_flop>.
+    Set property "HBLKNM = UART_RX6_2" for instance <data3_flop>.
+    Set property "HBLKNM = UART_RX6_2" for instance <data45_lut>.
+    Set property "HBLKNM = UART_RX6_2" for instance <data4_flop>.
+    Set property "HBLKNM = UART_RX6_2" for instance <data5_flop>.
+    Set property "HBLKNM = UART_RX6_2" for instance <data67_lut>.
+    Set property "HBLKNM = UART_RX6_2" for instance <data6_flop>.
+    Set property "HBLKNM = UART_RX6_2" for instance <data7_flop>.
+    Set property "HBLKNM = UART_RX6_4" for instance <run_lut>.
+    Set property "HBLKNM = UART_RX6_4" for instance <run_flop>.
+    Set property "HBLKNM = UART_RX6_4" for instance <start_bit_lut>.
+    Set property "HBLKNM = UART_RX6_4" for instance <start_bit_flop>.
+    Set property "HBLKNM = UART_RX6_3" for instance <div01_lut>.
+    Set property "HBLKNM = UART_RX6_3" for instance <div0_flop>.
+    Set property "HBLKNM = UART_RX6_3" for instance <div1_flop>.
+    Set property "HBLKNM = UART_RX6_3" for instance <div23_lut>.
+    Set property "HBLKNM = UART_RX6_3" for instance <div2_flop>.
+    Set property "HBLKNM = UART_RX6_3" for instance <div3_flop>.
+    Set property "HBLKNM = UART_RX6_3" for instance <sample_input_lut>.
+    Set property "HBLKNM = UART_RX6_3" for instance <sample_input_flop>.
+    Summary:
+	no macro.
+Unit <uart_rx6> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x19-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 1
+ 10-bit adder                                          : 1
+# Registers                                            : 31
+ 1-bit register                                        : 12
+ 10-bit register                                       : 1
+ 64-bit register                                       : 1
+ 8-bit register                                        : 17
+# Multiplexers                                         : 8
+ 8-bit 2-to-1 multiplexer                              : 8
+# Xors                                                 : 1
+ 1-bit xor8                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <CHAl_1_PORT_2> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_1_PORT_3> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_1_PORT_4> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_1_PORT_5> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_1_PORT_6> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_1_PORT_7> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_1> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_2> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_3> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_4> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_5> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_6> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_7> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_1> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_2> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_3> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_4> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_5> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_6> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_7> of sequential type is unconnected in block <PUF_CU>.
+
+Synthesizing (advanced) Unit <puf_controller>.
+The following registers are absorbed into counter <baud_count>: 1 register on signal <baud_count>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_port_en> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 19-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <port_id>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <port_en>       |          |
+    -----------------------------------------------------------------------
+Unit <puf_controller> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x19-bit single-port distributed Read Only RAM       : 1
+# Counters                                             : 1
+ 10-bit up counter                                     : 1
+# Registers                                            : 342
+ Flip-Flops                                            : 342
+# Multiplexers                                         : 8
+ 8-bit 2-to-1 multiplexer                              : 8
+# Xors                                                 : 1
+ 1-bit xor8                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit nandLatch : the following signal(s) form a combinatorial loop: qbar, q.
+
+Optimizing unit <switchChain> ...
+
+Optimizing unit <sw_dolut> ...
+
+Optimizing unit <nandLatch> ...
+
+Optimizing unit <kcpsm6> ...
+
+Optimizing unit <program> ...
+
+Optimizing unit <uart_tx6> ...
+
+Optimizing unit <uart_rx6> ...
+
+Optimizing unit <iXOR_APUF_64_DOLUT_wrapper> ...
+
+Optimizing unit <xor_apuf> ...
+
+Optimizing unit <apufClassic> ...
+
+Optimizing unit <puf_controller> ...
+WARNING:Xst:2677 - Node <CHAl_1_PORT_2> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_1_PORT_3> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_1_PORT_4> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_1_PORT_5> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_1_PORT_6> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_1_PORT_7> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_1> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_2> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_3> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_4> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_5> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_6> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_10_PORT_7> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_13_PORT_0> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_13_PORT_1> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_13_PORT_2> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_13_PORT_3> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_13_PORT_4> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_13_PORT_5> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_13_PORT_6> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_13_PORT_7> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_11_PORT_0> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_11_PORT_1> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_11_PORT_2> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_11_PORT_3> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_11_PORT_4> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_11_PORT_5> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_11_PORT_6> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_11_PORT_7> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_12_PORT_0> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_12_PORT_1> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_12_PORT_2> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_12_PORT_3> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_12_PORT_4> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_12_PORT_5> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_12_PORT_6> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_12_PORT_7> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_14_PORT_0> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_14_PORT_1> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_14_PORT_2> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_14_PORT_3> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_14_PORT_4> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_14_PORT_5> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_14_PORT_6> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_14_PORT_7> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_15_PORT_0> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_15_PORT_1> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_15_PORT_2> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_15_PORT_3> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_15_PORT_4> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_15_PORT_5> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_15_PORT_6> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_15_PORT_7> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_1> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_2> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_3> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_4> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_5> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_6> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <CHAl_16_PORT_7> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:2677 - Node <PUF_START_PORT> of sequential type is unconnected in block <PUF_CU>.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <baud_count_9> (without init value) has a constant value of 0 in block <PUF_CU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block iXOR_APUF_64_DOLUT_wrapper, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <sync_sleep_flop> in Unit <processor> is equivalent to the following FF/Latch : <sync_interrupt_flop> 
+INFO:Xst:2260 - The FF/Latch <sync_sleep_flop> in Unit <processor> is equivalent to the following FF/Latch : <sync_interrupt_flop> 
+INFO:Xst:2260 - The FF/Latch <sync_sleep_flop> in Unit <processor> is equivalent to the following FF/Latch : <sync_interrupt_flop> 
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 290
+ Flip-Flops                                            : 290
+
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_sleep_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sync_interrupt_flop> has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : iXOR_APUF_64_DOLUT_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 793
+#      GND                         : 5
+#      INV                         : 10
+#      LUT1                        : 8
+#      LUT2                        : 25
+#      LUT3                        : 4
+#      LUT4                        : 5
+#      LUT5                        : 3
+#      LUT6                        : 65
+#      LUT6_2                      : 581
+#      MUXCY                       : 37
+#      VCC                         : 14
+#      XORCY                       : 36
+# FlipFlops/Latches                : 290
+#      FD                          : 88
+#      FDE                         : 77
+#      FDR                         : 47
+#      FDRE                        : 78
+# RAMS                             : 7
+#      RAM32M                      : 4
+#      RAM64M                      : 2
+#      RAMB36E1                    : 1
+# Shift Registers                  : 16
+#      SRL16E                      : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             290  out of  126800     0%  
+ Number of Slice LUTs:                  741  out of  63400     1%  
+    Number used as Logic:               701  out of  63400     1%  
+    Number used as Memory:               40  out of  19000     0%  
+       Number used as RAM:               24
+       Number used as SRL:               16
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    949
+   Number with an unused Flip Flop:     659  out of    949    69%  
+   Number with an unused LUT:           208  out of    949    21%  
+   Number of fully used LUT-FF pairs:    82  out of    949     8%  
+   Number of unique control sets:        34
+
+IO Utilization: 
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    210     1%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    135     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                   | Load  |
+-----------------------------------+---------------------------------------------------------+-------+
+clk                                | BUFGP                                                   | 313   |
+PUF_CU/program_rom/rdl             | NONE(PUF_CU/program_rom/ram_2k_generate.akv7.kcpsm6_rom)| 1     |
+-----------------------------------+---------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------+---------------------------------------------------------+-------+
+Control Signal                                      | Buffer(FF name)                                         | Load  |
+----------------------------------------------------+---------------------------------------------------------+-------+
+PUF_CU/program_rom/rdl(PUF_CU/program_rom/XST_GND:G)| NONE(PUF_CU/program_rom/ram_2k_generate.akv7.kcpsm6_rom)| 4     |
+----------------------------------------------------+---------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 53.968ns (Maximum Frequency: 18.530MHz)
+   Minimum input arrival time before clock: 0.799ns
+   Maximum output required time after clock: 0.640ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 53.968ns (frequency: 18.530MHz)
+  Total number of paths / destination ports: 2361183241434822600000 / 706
+-------------------------------------------------------------------------
+Delay:               53.968ns (Levels of Logic = 74)
+  Source:            challenge_0 (FF)
+  Destination:       PUF_CU/in_port_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: challenge_0 to PUF_CU/in_port_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             8   0.361   0.312  challenge_0 (challenge_0)
+     begin scope: 'XAPUF:c<0>'
+     begin scope: 'XAPUF/PUFList[4].APUF:c<0>'
+     begin scope: 'XAPUF/PUFList[4].APUF/SWITCH_CHAIN:c<0>'
+     LUT6_2:I4->O6         1   0.511   0.279  STAGE[0].SW/SW (netT<1>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[1].SW/SW (netT<2>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[2].SW/SW (netT<3>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[3].SW/SW (netT<4>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[4].SW/SW (netT<5>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[5].SW/SW (netT<6>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[6].SW/SW (netT<7>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[7].SW/SW (netT<8>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[8].SW/SW (netT<9>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[9].SW/SW (netT<10>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[10].SW/SW (netT<11>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[11].SW/SW (netT<12>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[12].SW/SW (netT<13>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[13].SW/SW (netT<14>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[14].SW/SW (netT<15>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[15].SW/SW (netT<16>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[16].SW/SW (netT<17>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[17].SW/SW (netT<18>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[18].SW/SW (netT<19>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[19].SW/SW (netT<20>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[20].SW/SW (netT<21>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[21].SW/SW (netT<22>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[22].SW/SW (netT<23>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[23].SW/SW (netT<24>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[24].SW/SW (netT<25>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[25].SW/SW (netT<26>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[26].SW/SW (netT<27>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[27].SW/SW (netT<28>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[28].SW/SW (netT<29>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[29].SW/SW (netT<30>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[30].SW/SW (netT<31>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[31].SW/SW (netT<32>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[32].SW/SW (netT<33>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[33].SW/SW (netT<34>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[34].SW/SW (netT<35>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[35].SW/SW (netT<36>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[36].SW/SW (netT<37>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[37].SW/SW (netT<38>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[38].SW/SW (netT<39>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[39].SW/SW (netT<40>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[40].SW/SW (netT<41>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[41].SW/SW (netT<42>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[42].SW/SW (netT<43>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[43].SW/SW (netT<44>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[44].SW/SW (netT<45>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[45].SW/SW (netT<46>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[46].SW/SW (netT<47>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[47].SW/SW (netT<48>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[48].SW/SW (netT<49>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[49].SW/SW (netT<50>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[50].SW/SW (netT<51>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[51].SW/SW (netT<52>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[52].SW/SW (netT<53>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[53].SW/SW (netT<54>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[54].SW/SW (netT<55>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[55].SW/SW (netT<56>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[56].SW/SW (netT<57>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[57].SW/SW (netT<58>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[58].SW/SW (netT<59>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[59].SW/SW (netT<60>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[60].SW/SW (netT<61>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[61].SW/SW (netT<62>)
+     LUT6_2:I0->O6         1   0.511   0.279  STAGE[62].SW/SW (netT<63>)
+     LUT6_2:I0->O5         2   0.511   0.383  STAGE[63].SW/SW (outB)
+     end scope: 'XAPUF/PUFList[4].APUF/SWITCH_CHAIN:outB'
+     begin scope: 'XAPUF/PUFList[4].APUF/ARBITER:r'
+     LUT2:I0->O            1   0.411   0.295  Y (qbar)
+     LUT2:I1->O            3   0.495   0.521  X (q)
+     end scope: 'XAPUF/PUFList[4].APUF/ARBITER:q'
+     end scope: 'XAPUF/PUFList[4].APUF:respBit'
+     LUT3:I0->O            1   0.097   0.295  respBitA[7]_reduce_xor_21_xo<0>_SW0 (N01)
+     LUT6:I5->O            1   0.097   0.295  respBitA[7]_reduce_xor_21_xo<0> (respBit)
+     end scope: 'XAPUF:respBit'
+     begin scope: 'PUF_CU:RESP_1_PORT<0>'
+     LUT6:I5->O            1   0.097   0.000  Mmux_port_id[4]_in_port[7]_wide_mux_3_OUT23 (port_id[4]_in_port[7]_wide_mux_3_OUT<0>)
+     FDE:D                     0.008          in_port_0
+    ----------------------------------------
+    Total                     53.968ns (34.270ns logic, 19.698ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.799ns (Levels of Logic = 3)
+  Source:            rx (PAD)
+  Destination:       PUF_CU/receiver/sample_flop (FF)
+  Destination Clock: clk rising
+
+  Data Path: rx to PUF_CU/receiver/sample_flop
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.279  rx_IBUF (rx_IBUF)
+     begin scope: 'PUF_CU:rx'
+     begin scope: 'PUF_CU/receiver:serial_in'
+     LUT6_2:I0->O6         1   0.511   0.000  sample_lut (sample_dly_value)
+     FD:D                      0.008          sample_dly_flop
+    ----------------------------------------
+    Total                      0.799ns (0.520ns logic, 0.279ns route)
+                                       (65.1% logic, 34.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.640ns (Levels of Logic = 2)
+  Source:            PUF_CU/transmitter/serial_flop (FF)
+  Destination:       tx (PAD)
+  Source Clock:      clk rising
+
+  Data Path: PUF_CU/transmitter/serial_flop to tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.361   0.279  serial_flop (serial_out)
+     end scope: 'PUF_CU/transmitter:serial_out'
+     end scope: 'PUF_CU:tx'
+     OBUF:I->O                 0.000          tx_OBUF (tx)
+    ----------------------------------------
+    Total                      0.640ns (0.361ns logic, 0.279ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   53.968|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.10 secs
+ 
+--> 
+
+Total memory usage is 390300 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  141 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
+

@@ -1,0 +1,59 @@
+In this folder, we want to measure the noise rate of (x,y)-MXPUF and (x+y)-XOR PUF. 
+There are the following notes
+1. We measure the noise rate in file MXPUF_simulation00.m
+2. The major function for computing the outputs of MXPUF and XORPUF is MeasureXYXORPUF_MXPUF.m
+3. We measure the MXPUF as described by its definition but for the XORPUF we make a trick. 
+3a. We measure x-XOR PUF normally 
+3b. For y-XORPUF, we do not use the classical model of y-XOR PUF. We measure the y-XOR PUF with
+the challenge is defined as c=(c(0),...,c(i),feedback_a=0,c(i+1),...,c(n-1))
+
+To compute the output of x and y-XOR PUF we use the function ComputeResponseXOR.m
+4. To compute the noise rate of XOR PUF and MXPUF, we use the function ComputeTheNoise.m
+
+
+In MXPUF_similation01.m, we compare the reliability of (x+y)-XOR PUF,
+(x,y)-MXPUF, x-XOR PUF, y-XOR PUF
+
+To do it, we need MeasureTheNoiseRateXYXORPUF_MXPUF.m where we use the 
+MeasureTheNoiseRateXYXORPUF_MXPUF.m for measuring the output infomation. 
+
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+
+In CMAES_MXPUF_analysis00.m, we model (x,y)-MXPUF
+We call the function CMAES_MXPUF.m for building the model. In this function,
+we use the model_Acc_rel_du_MXPUF as the fitness function.
+Since MXPUF_w is a 1-dimensional vector, we need the splitMXPUF function
+to split it into x-XOR PUF (first) and then y-XOR PUF
+
+to compute the accuracy of the model, we use the function 
+ComputePredictionAccuracy
+
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+
+In CMAES_XorPUF_analysis00.m, we model x-XORPUF
+We call the function CMAES_XorPUF.m for building the model. In this function,
+we use the model_Acc_rel_du_XorPUF as the fitness function.
+Since XorPUF_w is a 1-dimensional vector with x*(chalSize+1) components, 
+we need the splitXORPUF function
+to split it into x-XOR PUF
+
+to compute the accuracy of the model, we use the function 
+ComputePredictionAccuracy
+
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+ComputeSAC_MXPUF.m and ComputeSAC_MXPUF_simulation00
+
+1. We compute the SAC property of MXPUF by following the formula in the paper 
+
+2. We compute the SAC property of MXPUF by using simulation (simulation00)
+
+
+
+
+
+
+
+

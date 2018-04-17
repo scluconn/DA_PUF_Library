@@ -1,0 +1,26 @@
+In this case, we demonstate Linear Approximation attack on MXPUF, approximate MXPUF by an APUF. We build the model of APUF by using Becker's attack.  
+
+The master file is: MXPUF_analysis00
+
+We runs the attack on noisy MXPUF $U$ times 
+
+1. First, we need to build a MXPUF model 
+In each attack (k=1:U), 
+we generate a new set of Q (TrS) and compute the response of noisy MXPUF for this Q (ComputeNoisyResponseMXPUF.m).
+
+We get the noise information by using ComputeTheNoiseInformation
+After that, we call the CMAES algorithm. 
+
+2. After that, we compare the accuracy of wModel of APUF with MXPUF. 
+
+Conclusion: 
+
+1. We do 10 attacks at each position 32 for 64-bit (1,1)-MXPUF, noise rate 20%, CRP 200.000, iteration 1.000
+
+
+ 
+ 
+
+
+
+  

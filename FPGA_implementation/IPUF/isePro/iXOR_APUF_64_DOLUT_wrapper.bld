@@ -1,0 +1,45 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc
+C:/Users/chj14009/Documents/GitHub/IPUF/IPUF/src/ucf/wrapper.ucf -uc
+C:/Users/chj14009/Documents/GitHub/IPUF/IPUF/src/ucf/iXAPUF_64_a1_1_equal_weight
+.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc
+iXOR_APUF_64_DOLUT_wrapper.ngd
+
+Reading NGO file
+"C:/Users/chj14009/Documents/GitHub/IPUF/IPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.
+ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"C:/Users/chj14009/Documents/GitHub/IPUF/IPUF/src/ucf/wrapper.ucf" ...
+Annotating constraints to design from ucf file
+"C:/Users/chj14009/Documents/GitHub/IPUF/IPUF/src/ucf/iXAPUF_64_a1_1_equal_weigh
+t.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 215056 kilobytes
+
+Writing NGD file "iXOR_APUF_64_DOLUT_wrapper.ngd" ...
+Total REAL time to NGDBUILD completion:  7 sec
+Total CPU time to NGDBUILD completion:   5 sec
+
+Writing NGDBUILD log file "iXOR_APUF_64_DOLUT_wrapper.bld"...

@@ -1,0 +1,2 @@
+This folde contains the code for logistic regression attack on XOR Arbiter
+PUFs. 

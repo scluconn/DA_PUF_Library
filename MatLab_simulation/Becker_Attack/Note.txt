@@ -1,0 +1,22 @@
+The full example for attacking on XORPUF is described in XORPUF_simulation00
+
+
+********** sub-function/ procedures *************
+XORPUFgeneration ==> generate the XORPUF, note that mu=0 and sigma>0
+
+ComputeResponseXOR ==> Compute response when there is no noise
+
+ComputeNoisyResponseXOR ==> Evaluate the XORPUF multiple times (say m times) in the presence of noise
+
+ComputeTheNoise ===> Compute how many CRPs are noisy (a number or a rate is the output)
+
+ComputeTheNoiseInformation ===> Compute indication array pointing which CRPs are noisy and reliable. This information required for Becker's attack
+
+modelAcc_rel_du ===> compute the correlation, i.e., evaluation function
+
+modelAccHa  ==> compute the accuracy of the model 
+
+Transform ==> for a given array of challenge, we compute the parity vector 
+
+CMAES ===> compute the model by using the CMAES
+

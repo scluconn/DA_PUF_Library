@@ -1,0 +1,416 @@
+xst -intstyle ise -ifn "F:/RESEARCH/UPDATED_PUF_DESIGN/Artix7/iXOR_APUF_SW_DOLUT_64/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "F:/RESEARCH/UPDATED_PUF_DESIGN/Artix7/iXOR_APUF_SW_DOLUT_64/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc F:/RESEARCH/UPDATED_PUF_DESIGN/Artix7/iXOR_APUF_SW_DOLUT_64/src/ucf/wrapper.ucf -uc F:/RESEARCH/UPDATED_PUF_DESIGN/Artix7/iXOR_APUF_SW_DOLUT_64/src/ucf/iXAPUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/iXAPUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a7.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a16.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a16.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a16.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a16.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a16.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a16.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a16.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a24.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a23.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a8_equal.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 
+xst -intstyle ise -ifn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.xst" -ofn "D:/GitHub/IPUF/XORPUF/isePro/iXOR_APUF_64_DOLUT_wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/IPUF/XORPUF/src/ucf/wrapper.ucf -uc D:/GitHub/IPUF/XORPUF/src/ucf/APUF_64_a8_equal.ucf -p xc7a100t-csg324-3 iXOR_APUF_64_DOLUT_wrapper.ngc iXOR_APUF_64_DOLUT_wrapper.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ngd iXOR_APUF_64_DOLUT_wrapper.pcf 
+par -w -intstyle ise -ol high -mt off iXOR_APUF_64_DOLUT_wrapper_map.ncd iXOR_APUF_64_DOLUT_wrapper.ncd iXOR_APUF_64_DOLUT_wrapper.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml iXOR_APUF_64_DOLUT_wrapper.twx iXOR_APUF_64_DOLUT_wrapper.ncd -o iXOR_APUF_64_DOLUT_wrapper.twr iXOR_APUF_64_DOLUT_wrapper.pcf 
+bitgen -intstyle ise -f iXOR_APUF_64_DOLUT_wrapper.ut iXOR_APUF_64_DOLUT_wrapper.ncd 

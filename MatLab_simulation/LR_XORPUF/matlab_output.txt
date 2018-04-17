@@ -1,0 +1,2031 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+Max Grad = 3.49964
+
+Max Grad = 2.04892
+
+Max Grad = 1.17298
+
+Max Grad = 0.767666
+
+Max Grad = 0.652564
+
+Max Grad = 0.447215
+
+Max Grad = 0.404789
+
+Max Grad = 0.391685
+
+Max Grad = 0.230118
+
+Max Grad = 0.274298
+
+Max Grad = 0.174796
+
+Max Grad = 0.185177
+
+Max Grad = 0.223319
+
+Max Grad = 0.113419
+
+Max Grad = 0.1159
+
+Max Grad = 0.163631
+
+Max Grad = 0.0687634
+
+Max Grad = 0.0895894
+
+Max Grad = 0.0896325
+
+Max Grad = 0.0904721
+
+Max Grad = 0.0623922
+
+Max Grad = 0.0279793
+
+Max Grad = 0.0279053
+
+Max Grad = 0.037316
+
+Max Grad = 0.0258767
+
+Max Grad = 0.0266353
+
+Max Grad = 0.0153351
+
+Max Grad = 0.0159134
+
+Max Grad = 0.0180953
+
+Max Grad = 0.0135427
+
+Max Grad = 0.0204225
+
+Max Grad = 0.00805041
+
+Max Grad = 0.00810891
+
+Max Grad = 0.00966744
+
+Max Grad = 0.00521991
+
+Max Grad = 0.00482181
+
+Max Grad = 0.00360415
+
+Max Grad = 0.00473801
+
+Max Grad = 0.00413865
+
+Max Grad = 0.00249029
+
+Max Grad = 0.0026255
+
+Max Grad = 0.00276189
+
+Max Grad = 0.00176669
+
+Max Grad = 0.00190797
+
+Max Grad = 0.00419542
+
+Max Grad = 0.00150073
+
+Max Grad = 0.00176454
+
+Max Grad = 0.00111451
+
+Max Grad = 0.000945982
+
+Max Grad = 0.000752914
+
+Max Grad = 0.000628589
+
+Max Grad = 0.000763753
+
+Max Grad = 0.000566886
+
+Max Grad = 0.000529581
+
+Max Grad = 0.000502536
+
+Max Grad = 0.000329431
+
+Max Grad = 0.000327457
+
+Max Grad = 0.000395468
+
+Max Grad = 0.000354913
+
+Max Grad = 0.000220935
+
+Max Grad = 0.000233994
+
+Max Grad = 0.000152959
+
+Max Grad = 0.000157382
+
+Max Grad = 0.000165453
+
+Max Grad = 0.000164173
+
+Max Grad = 0.000142744
+
+Max Grad = 0.000104204
+
+Max Grad = 8.66429e-05
+
+Max Grad = 6.79449e-05
+
+Max Grad = 6.5029e-05
+
+Max Grad = 7.18055e-05
+
+Max Grad = 6.42249e-05
+
+Max Grad = 5.18697e-05
+
+Max Grad = 3.98464e-05
+
+Max Grad = 4.24936e-05
+
+Max Grad = 2.51081e-05
+
+Max Grad = 3.08945e-05
+
+Max Grad = 1.96896e-05
+
+Max Grad = 2.68012e-05
+
+Max Grad = 1.86443e-05
+
+Max Grad = 1.43439e-05
+
+Max Grad = 1.17632e-05
+
+Max Grad = 1.53573e-05
+
+Max Grad = 1.12959e-05
+
+Max Grad = 5.20565e-06
+
+Max Grad = 8.28221e-06
+
+Max Grad = 5.51135e-06
+
+Max Grad = 7.17071e-06
+
+Max Grad = 6.39734e-06
+
+Max Grad = 4.33545e-06
+
+Max Grad = 4.37385e-06
+
+Max Grad = 5.11318e-06
+
+Max Grad = 2.86019e-06
+
+Max Grad = 3.89466e-06
+
+Max Grad = 2.3539e-06
+
+Max Grad = 2.32437e-06
+
+Max Grad = 2.01262e-06
+
+Max Grad = 1.95808e-06
+
+Max Grad = 1.4824e-06
+
+Max Grad = 1.37649e-06
+
+Iteration used = 100000
+
+Max Grad = 10.0466
+
+Max Grad = 6.17497
+
+Max Grad = 3.65323
+
+Max Grad = 2.86102
+
+Max Grad = 2.38309
+
+Max Grad = 1.89189
+
+Max Grad = 1.37441
+
+Max Grad = 1.19009
+
+Max Grad = 1.0065
+
+Max Grad = 1.33857
+
+Max Grad = 1.119
+
+Max Grad = 0.966964
+
+Max Grad = 0.944239
+
+Max Grad = 0.967178
+
+Max Grad = 0.83054
+
+Max Grad = 0.887248
+
+Max Grad = 0.691889
+
+Max Grad = 0.604628
+
+Max Grad = 0.599055
+
+Max Grad = 0.548304
+
+Max Grad = 0.615678
+
+Max Grad = 0.451198
+
+Max Grad = 0.6991
+
+Max Grad = 0.437093
+
+Max Grad = 0.501794
+
+Max Grad = 0.622073
+
+Max Grad = 0.335587
+
+Max Grad = 0.336361
+
+Max Grad = 0.414828
+
+Max Grad = 0.293145
+
+Max Grad = 0.255141
+
+Max Grad = 0.37386
+
+Max Grad = 0.264678
+
+Max Grad = 0.336639
+
+Max Grad = 0.309958
+
+Max Grad = 0.242352
+
+Max Grad = 0.230118
+
+Max Grad = 0.287396
+
+Max Grad = 0.227207
+
+Max Grad = 0.236385
+
+Max Grad = 0.16468
+
+Max Grad = 0.250326
+
+Max Grad = 0.200498
+
+Max Grad = 0.223947
+
+Max Grad = 0.234823
+
+Max Grad = 0.197496
+
+Max Grad = 0.222779
+
+Max Grad = 0.224676
+
+Max Grad = 0.198469
+
+Max Grad = 0.322741
+
+Max Grad = 0.248035
+
+Max Grad = 0.182454
+
+Max Grad = 0.203463
+
+Max Grad = 0.233872
+
+Max Grad = 0.179498
+
+Max Grad = 0.277175
+
+Max Grad = 0.172285
+
+Max Grad = 0.130599
+
+Max Grad = 0.199433
+
+Max Grad = 0.131689
+
+Max Grad = 0.122603
+
+Max Grad = 0.132402
+
+Max Grad = 0.122143
+
+Max Grad = 0.161004
+
+Max Grad = 0.162674
+
+Max Grad = 0.150101
+
+Max Grad = 0.11764
+
+Max Grad = 0.152374
+
+Max Grad = 0.161253
+
+Max Grad = 0.0943629
+
+Max Grad = 0.135062
+
+Max Grad = 0.10075
+
+Max Grad = 0.153428
+
+Max Grad = 0.099879
+
+Max Grad = 0.108508
+
+Max Grad = 0.144768
+
+Max Grad = 0.101233
+
+Max Grad = 0.120857
+
+Max Grad = 0.0704339
+
+Max Grad = 0.0769436
+
+Max Grad = 0.0936577
+
+Max Grad = 0.079326
+
+Max Grad = 0.0807215
+
+Max Grad = 0.116719
+
+Max Grad = 0.0842617
+
+Max Grad = 0.103115
+
+Max Grad = 0.0751225
+
+Max Grad = 0.0808822
+
+Max Grad = 0.0878911
+
+Max Grad = 0.0628093
+
+Max Grad = 0.0917447
+
+Max Grad = 0.11204
+
+Max Grad = 0.0752622
+
+Max Grad = 0.105651
+
+Max Grad = 0.104438
+
+Max Grad = 0.0508416
+
+Max Grad = 0.0631504
+
+Max Grad = 0.0480949
+
+Max Grad = 0.0671543
+
+Max Grad = 0.0434809
+
+Iteration used = 100000
+
+Max Grad = 12.9407
+
+Max Grad = 9.57549
+
+Max Grad = 4.41891
+
+Max Grad = 4.91461
+
+Max Grad = 4.36266
+
+Max Grad = 3.10507
+
+Max Grad = 2.92113
+
+Max Grad = 2.39649
+
+Max Grad = 2.86252
+
+Max Grad = 3.06708
+
+Max Grad = 1.73565
+
+Max Grad = 2.18486
+
+Max Grad = 2.52164
+
+Max Grad = 1.31589
+
+Max Grad = 1.81675
+
+Max Grad = 1.23951
+
+Max Grad = 1.51801
+
+Max Grad = 1.11872
+
+Max Grad = 1.28004
+
+Max Grad = 1.56287
+
+Max Grad = 1.03526
+
+Max Grad = 1.323
+
+Max Grad = 0.734541
+
+Max Grad = 1.07199
+
+Max Grad = 1.10112
+
+Max Grad = 0.715459
+
+Max Grad = 1.00972
+
+Max Grad = 0.891324
+
+Max Grad = 0.658014
+
+Max Grad = 0.877383
+
+Max Grad = 0.736879
+
+Max Grad = 0.689888
+
+Max Grad = 0.893511
+
+Max Grad = 0.609969
+
+Max Grad = 0.675358
+
+Max Grad = 0.671554
+
+Max Grad = 0.487142
+
+Max Grad = 0.53485
+
+Max Grad = 0.561828
+
+Max Grad = 0.602168
+
+Max Grad = 0.713017
+
+Max Grad = 0.591409
+
+Max Grad = 0.62928
+
+Max Grad = 0.778823
+
+Max Grad = 0.374203
+
+Max Grad = 0.396718
+
+Max Grad = 0.504511
+
+Max Grad = 0.459765
+
+Max Grad = 0.621186
+
+Max Grad = 0.321217
+
+Max Grad = 0.348154
+
+Max Grad = 0.758361
+
+Max Grad = 0.367533
+
+Max Grad = 0.293797
+
+Max Grad = 0.356924
+
+Max Grad = 0.303601
+
+Max Grad = 0.390615
+
+Max Grad = 0.412881
+
+Max Grad = 0.373485
+
+Max Grad = 0.55612
+
+Max Grad = 0.547854
+
+Max Grad = 0.539511
+
+Max Grad = 0.69023
+
+Max Grad = 0.59394
+
+Max Grad = 0.701544
+
+Max Grad = 0.565302
+
+Max Grad = 0.869865
+
+Max Grad = 0.90015
+
+Max Grad = 0.784313
+
+Max Grad = 0.987143
+
+Max Grad = 1.09301
+
+Max Grad = 1.00744
+
+Max Grad = 1.13161
+
+Max Grad = 1.09334
+
+Max Grad = 1.27397
+
+Max Grad = 1.22021
+
+Max Grad = 1.16829
+
+Max Grad = 1.28286
+
+Max Grad = 1.35486
+
+Max Grad = 1.33116
+
+Max Grad = 1.35902
+
+Max Grad = 1.36998
+
+Max Grad = 1.53357
+
+Max Grad = 1.52646
+
+Max Grad = 1.47642
+
+Max Grad = 1.4944
+
+Max Grad = 1.60425
+
+Max Grad = 1.58605
+
+Max Grad = 1.56866
+
+Max Grad = 1.59543
+
+Max Grad = 1.58448
+
+Max Grad = 1.61331
+
+Max Grad = 1.49623
+
+Max Grad = 1.56543
+
+Max Grad = 1.70067
+
+Max Grad = 1.69635
+
+Max Grad = 1.64678
+
+Max Grad = 1.65807
+
+Max Grad = 1.62658
+
+Max Grad = 1.73428
+
+Iteration used = 100000
+
+Max Grad = 21.2813
+
+Max Grad = 13.3966
+
+Max Grad = 14.4318
+
+Max Grad = 8.75397
+
+Max Grad = 5.69329
+
+Max Grad = 6.81383
+
+Max Grad = 6.41343
+
+Max Grad = 5.17779
+
+Max Grad = 4.79989
+
+Max Grad = 3.55299
+
+Max Grad = 3.70312
+
+Max Grad = 4.09308
+
+Max Grad = 3.36788
+
+Max Grad = 4.59873
+
+Max Grad = 2.17924
+
+Max Grad = 3.08951
+
+Max Grad = 2.6064
+
+Max Grad = 2.66727
+
+Max Grad = 2.13282
+
+Max Grad = 2.21357
+
+Max Grad = 2.64639
+
+Max Grad = 2.77663
+
+Max Grad = 2.04979
+
+Max Grad = 2.77045
+
+Max Grad = 1.63768
+
+Max Grad = 1.95477
+
+Max Grad = 1.7491
+
+Max Grad = 1.44901
+
+Max Grad = 1.87443
+
+Max Grad = 1.08735
+
+Max Grad = 1.76322
+
+Max Grad = 1.02207
+
+Max Grad = 1.53676
+
+Max Grad = 1.88086
+
+Max Grad = 1.46449
+
+Max Grad = 1.29444
+
+Max Grad = 1.33569
+
+Max Grad = 1.2807
+
+Max Grad = 1.01593
+
+Max Grad = 1.17601
+
+Max Grad = 1.27568
+
+Max Grad = 1.10431
+
+Max Grad = 0.817943
+
+Max Grad = 0.927749
+
+Max Grad = 1.03611
+
+Max Grad = 1.29414
+
+Max Grad = 1.23555
+
+Max Grad = 1.18544
+
+Max Grad = 1.20271
+
+Max Grad = 0.689974
+
+Max Grad = 1.28226
+
+Max Grad = 0.977303
+
+Max Grad = 1.01555
+
+Max Grad = 1.35525
+
+Max Grad = 0.916256
+
+Max Grad = 0.764567
+
+Max Grad = 0.955124
+
+Max Grad = 0.995837
+
+Max Grad = 1.03232
+
+Max Grad = 0.750695
+
+Max Grad = 0.93368
+
+Max Grad = 0.635707
+
+Max Grad = 0.936329
+
+Max Grad = 1.11551
+
+Max Grad = 0.737608
+
+Max Grad = 0.704996
+
+Max Grad = 0.727308
+
+Max Grad = 0.924025
+
+Max Grad = 0.679739
+
+Max Grad = 0.607358
+
+Max Grad = 0.503931
+
+Max Grad = 0.514175
+
+Max Grad = 0.770819
+
+Max Grad = 0.869169
+
+Max Grad = 0.78555
+
+Max Grad = 0.929383
+
+Max Grad = 0.565728
+
+Max Grad = 0.60106
+
+Max Grad = 0.820874
+
+Max Grad = 0.601684
+
+Max Grad = 0.734812
+
+Max Grad = 0.551798
+
+Max Grad = 0.418203
+
+Max Grad = 0.648241
+
+Max Grad = 0.415936
+
+Max Grad = 0.529223
+
+Max Grad = 0.827594
+
+Max Grad = 0.469369
+
+Max Grad = 0.537979
+
+Max Grad = 0.551257
+
+Max Grad = 0.431534
+
+Max Grad = 0.664433
+
+Max Grad = 0.452509
+
+Max Grad = 0.448233
+
+Max Grad = 0.567929
+
+Max Grad = 0.533808
+
+Max Grad = 0.594179
+
+Max Grad = 0.832989
+
+Max Grad = 0.37295
+
+Max Grad = 0.59121
+
+Iteration used = 100000
+
+Max Grad = 26.7708
+
+Max Grad = 18.2691
+
+Max Grad = 9.80864
+
+Max Grad = 11.424
+
+Max Grad = 9.27549
+
+Max Grad = 6.95932
+
+Max Grad = 6.10345
+
+Max Grad = 5.21738
+
+Max Grad = 4.5629
+
+Max Grad = 4.1069
+
+Max Grad = 4.3079
+
+Max Grad = 4.07352
+
+Max Grad = 3.71482
+
+Max Grad = 3.24279
+
+Max Grad = 4.76206
+
+Max Grad = 3.04775
+
+Max Grad = 3.51468
+
+Max Grad = 2.42261
+
+Max Grad = 3.60392
+
+Max Grad = 2.50609
+
+Max Grad = 2.61653
+
+Max Grad = 3.14566
+
+Max Grad = 2.92913
+
+Max Grad = 3.22011
+
+Max Grad = 4.2038
+
+Max Grad = 4.27705
+
+Max Grad = 4.14151
+
+Max Grad = 4.17127
+
+Max Grad = 4.61568
+
+Max Grad = 4.95426
+
+Max Grad = 4.87119
+
+Max Grad = 4.93298
+
+Max Grad = 5.22769
+
+Max Grad = 5.05477
+
+Max Grad = 5.33519
+
+Max Grad = 5.75155
+
+Max Grad = 5.06117
+
+Max Grad = 5.63077
+
+Max Grad = 5.47683
+
+Max Grad = 6.52232
+
+Max Grad = 6.00819
+
+Max Grad = 6.01787
+
+Max Grad = 5.97536
+
+Max Grad = 5.89547
+
+Max Grad = 5.78385
+
+Max Grad = 6.07922
+
+Max Grad = 5.93733
+
+Max Grad = 6.3647
+
+Max Grad = 5.8702
+
+Max Grad = 6.19743
+
+Max Grad = 5.85019
+
+Max Grad = 6.03885
+
+Max Grad = 5.96869
+
+Max Grad = 5.79929
+
+Max Grad = 6.1257
+
+Max Grad = 5.9124
+
+Max Grad = 5.97165
+
+Max Grad = 6.1093
+
+Max Grad = 6.05161
+
+Max Grad = 6.04249
+
+Max Grad = 5.7924
+
+Max Grad = 5.84079
+
+Max Grad = 6.1242
+
+Max Grad = 5.94557
+
+Max Grad = 5.92052
+
+Max Grad = 6.09873
+
+Max Grad = 5.97132
+
+Max Grad = 5.88127
+
+Max Grad = 6.07912
+
+Max Grad = 5.65433
+
+Max Grad = 5.90358
+
+Max Grad = 5.63682
+
+Max Grad = 5.86315
+
+Max Grad = 5.6573
+
+Max Grad = 5.53675
+
+Max Grad = 5.68256
+
+Max Grad = 5.60009
+
+Max Grad = 5.32524
+
+Max Grad = 5.66067
+
+Max Grad = 5.7658
+
+Max Grad = 5.606
+
+Max Grad = 5.79031
+
+Max Grad = 5.49792
+
+Max Grad = 5.45191
+
+Max Grad = 5.81783
+
+Max Grad = 5.5285
+
+Max Grad = 5.34573
+
+Max Grad = 5.41599
+
+Max Grad = 5.57946
+
+Max Grad = 5.48664
+
+Max Grad = 5.45473
+
+Max Grad = 5.3975
+
+Max Grad = 5.47064
+
+Max Grad = 5.42112
+
+Max Grad = 5.36663
+
+Max Grad = 5.44768
+
+Max Grad = 5.39498
+
+Max Grad = 5.40678
+
+Max Grad = 5.18546
+
+Max Grad = 5.41977
+
+Iteration used = 100000
+
+Max Grad = 28.9967
+
+Max Grad = 18.2814
+
+Max Grad = 10.9764
+
+Max Grad = 15.0587
+
+Max Grad = 8.84427
+
+Max Grad = 7.81409
+
+Max Grad = 7.10056
+
+Max Grad = 7.76876
+
+Max Grad = 5.25151
+
+Max Grad = 5.95032
+
+Max Grad = 5.41174
+
+Max Grad = 4.47988
+
+Max Grad = 5.67306
+
+Max Grad = 3.36668
+
+Max Grad = 4.50383
+
+Max Grad = 2.98421
+
+Max Grad = 4.31895
+
+Max Grad = 4.76684
+
+Max Grad = 2.88104
+
+Max Grad = 3.30668
+
+Max Grad = 3.73391
+
+Max Grad = 3.05048
+
+Max Grad = 4.20047
+
+Max Grad = 2.32648
+
+Max Grad = 2.37243
+
+Max Grad = 3.23014
+
+Max Grad = 2.86584
+
+Max Grad = 3.24211
+
+Max Grad = 2.09467
+
+Max Grad = 2.40777
+
+Max Grad = 3.01902
+
+Max Grad = 1.77704
+
+Max Grad = 1.85117
+
+Max Grad = 2.45746
+
+Max Grad = 2.265
+
+Max Grad = 2.20942
+
+Max Grad = 2.56083
+
+Max Grad = 2.07586
+
+Max Grad = 1.58809
+
+Max Grad = 1.93744
+
+Max Grad = 1.28018
+
+Max Grad = 1.65348
+
+Max Grad = 1.45275
+
+Max Grad = 1.91396
+
+Max Grad = 1.23734
+
+Max Grad = 1.72214
+
+Max Grad = 1.4995
+
+Max Grad = 1.71665
+
+Max Grad = 1.31496
+
+Max Grad = 1.40687
+
+Max Grad = 1.80411
+
+Max Grad = 1.56105
+
+Max Grad = 1.39418
+
+Max Grad = 1.51968
+
+Max Grad = 1.57669
+
+Max Grad = 1.56156
+
+Max Grad = 1.50346
+
+Max Grad = 1.7499
+
+Max Grad = 1.15959
+
+Max Grad = 1.40822
+
+Max Grad = 1.19168
+
+Max Grad = 0.998316
+
+Max Grad = 1.39598
+
+Max Grad = 1.17104
+
+Max Grad = 1.1066
+
+Max Grad = 0.995775
+
+Max Grad = 1.19986
+
+Max Grad = 1.22414
+
+Max Grad = 1.75716
+
+Max Grad = 1.30756
+
+Max Grad = 0.939513
+
+Max Grad = 1.34302
+
+Max Grad = 1.09967
+
+Max Grad = 1.09856
+
+Max Grad = 0.817944
+
+Max Grad = 1.02538
+
+Max Grad = 1.419
+
+Max Grad = 0.964075
+
+Max Grad = 0.999382
+
+Max Grad = 1.01605
+
+Max Grad = 0.714899
+
+Max Grad = 0.894849
+
+Max Grad = 0.937874
+
+Max Grad = 0.894808
+
+Max Grad = 1.64949
+
+Max Grad = 0.70573
+
+Max Grad = 1.16587
+
+Max Grad = 0.982426
+
+Max Grad = 0.949501
+
+Max Grad = 0.912095
+
+Max Grad = 0.832731
+
+Max Grad = 1.03182
+
+Max Grad = 1.39535
+
+Max Grad = 1.39445
+
+Max Grad = 1.4523
+
+Max Grad = 0.85434
+
+Max Grad = 1.17808
+
+Max Grad = 0.873935
+
+Max Grad = 0.78368
+
+Max Grad = 0.769687
+
+Iteration used = 100000
+
+Max Grad = 38.9337
+
+Max Grad = 18.6127
+
+Max Grad = 14.965
+
+Max Grad = 11.8207
+
+Max Grad = 10.7954
+
+Max Grad = 10.7767
+
+Max Grad = 7.16113
+
+Max Grad = 5.57594
+
+Max Grad = 6.12392
+
+Max Grad = 6.20276
+
+Max Grad = 5.74148
+
+Max Grad = 5.8823
+
+Max Grad = 4.46245
+
+Max Grad = 4.88795
+
+Max Grad = 4.04202
+
+Max Grad = 3.64493
+
+Max Grad = 3.40507
+
+Max Grad = 4.01148
+
+Max Grad = 3.80146
+
+Max Grad = 3.00409
+
+Max Grad = 2.89332
+
+Max Grad = 3.85854
+
+Max Grad = 2.55373
+
+Max Grad = 2.82961
+
+Max Grad = 2.32257
+
+Max Grad = 2.21025
+
+Max Grad = 2.65798
+
+Max Grad = 2.53743
+
+Max Grad = 1.98658
+
+Max Grad = 2.92342
+
+Max Grad = 2.0803
+
+Max Grad = 2.2396
+
+Max Grad = 1.99422
+
+Max Grad = 1.78987
+
+Max Grad = 2.31739
+
+Max Grad = 2.0954
+
+Max Grad = 1.42637
+
+Max Grad = 1.66605
+
+Max Grad = 1.82363
+
+Max Grad = 1.96695
+
+Max Grad = 1.94805
+
+Max Grad = 1.62264
+
+Max Grad = 1.38602
+
+Max Grad = 1.83114
+
+Max Grad = 1.51498
+
+Max Grad = 1.92993
+
+Max Grad = 1.60589
+
+Max Grad = 1.45319
+
+Max Grad = 1.60906
+
+Max Grad = 1.37883
+
+Max Grad = 1.63484
+
+Max Grad = 1.28565
+
+Max Grad = 1.52583
+
+Max Grad = 1.25977
+
+Max Grad = 0.965165
+
+Max Grad = 1.45408
+
+Max Grad = 1.22316
+
+Max Grad = 0.984376
+
+Max Grad = 1.35569
+
+Max Grad = 1.82934
+
+Max Grad = 0.859575
+
+Max Grad = 1.08939
+
+Max Grad = 0.939811
+
+Max Grad = 1.15286
+
+Max Grad = 1.2034
+
+Max Grad = 1.94761
+
+Max Grad = 0.862753
+
+Max Grad = 0.784734
+
+Max Grad = 1.01383
+
+Max Grad = 0.796001
+
+Max Grad = 0.815206
+
+Max Grad = 0.957407
+
+Max Grad = 1.2813
+
+Max Grad = 1.34478
+
+Max Grad = 0.7794
+
+Max Grad = 1.13849
+
+Max Grad = 0.671106
+
+Max Grad = 0.917777
+
+Max Grad = 1.05952
+
+Max Grad = 0.726787
+
+Max Grad = 0.781441
+
+Max Grad = 0.736738
+
+Max Grad = 0.885866
+
+Max Grad = 0.696689
+
+Max Grad = 1.11755
+
+Max Grad = 0.964305
+
+Max Grad = 0.856262
+
+Max Grad = 0.637059
+
+Max Grad = 0.785919
+
+Max Grad = 0.829334
+
+Max Grad = 0.918531
+
+Max Grad = 0.885786
+
+Max Grad = 0.651807
+
+Max Grad = 0.715353
+
+Max Grad = 0.495888
+
+Max Grad = 0.620618
+
+Max Grad = 0.759798
+
+Max Grad = 0.800701
+
+Max Grad = 1.18716
+
+Max Grad = 0.497609
+
+Iteration used = 100000
+
+Max Grad = 44.2132
+
+Max Grad = 27.7004
+
+Max Grad = 26.0404
+
+Max Grad = 14.1424
+
+Max Grad = 17.8973
+
+Max Grad = 10.5059
+
+Max Grad = 13.5741
+
+Max Grad = 5.66547
+
+Max Grad = 9.05719
+
+Max Grad = 7.24097
+
+Max Grad = 7.73184
+
+Max Grad = 8.32276
+
+Max Grad = 6.09752
+
+Max Grad = 7.48877
+
+Max Grad = 5.49858
+
+Max Grad = 6.30421
+
+Max Grad = 5.76464
+
+Max Grad = 4.622
+
+Max Grad = 5.12142
+
+Max Grad = 3.94108
+
+Max Grad = 5.39176
+
+Max Grad = 3.48184
+
+Max Grad = 4.61068
+
+Max Grad = 3.97669
+
+Max Grad = 3.51072
+
+Max Grad = 3.86131
+
+Max Grad = 2.99222
+
+Max Grad = 2.24239
+
+Max Grad = 5.00604
+
+Max Grad = 3.93807
+
+Max Grad = 3.69681
+
+Max Grad = 2.18601
+
+Max Grad = 2.45334
+
+Max Grad = 2.83546
+
+Max Grad = 2.66457
+
+Max Grad = 3.01468
+
+Max Grad = 2.49238
+
+Max Grad = 1.8911
+
+Max Grad = 2.18512
+
+Max Grad = 2.53169
+
+Max Grad = 1.87292
+
+Max Grad = 3.38885
+
+Max Grad = 2.24618
+
+Max Grad = 2.22519
+
+Max Grad = 3.26396
+
+Max Grad = 2.67307
+
+Max Grad = 1.98343
+
+Max Grad = 3.6743
+
+Max Grad = 1.34897
+
+Max Grad = 2.6028
+
+Max Grad = 1.89087
+
+Max Grad = 2.04253
+
+Max Grad = 2.72609
+
+Max Grad = 1.36427
+
+Max Grad = 2.23548
+
+Max Grad = 1.54561
+
+Max Grad = 3.16452
+
+Max Grad = 2.62226
+
+Max Grad = 1.52122
+
+Max Grad = 1.47952
+
+Max Grad = 1.67986
+
+Max Grad = 1.39803
+
+Max Grad = 1.62016
+
+Max Grad = 1.64755
+
+Max Grad = 1.98417
+
+Max Grad = 1.78833
+
+Max Grad = 1.55934
+
+Max Grad = 1.39014
+
+Max Grad = 1.68074
+
+Max Grad = 1.11518
+
+Max Grad = 1.40991
+
+Max Grad = 1.63592
+
+Max Grad = 1.45346
+
+Max Grad = 1.41808
+
+Max Grad = 1.16174
+
+Max Grad = 1.39818
+
+Max Grad = 1.43605
+
+Max Grad = 0.963917
+
+Max Grad = 1.31986
+
+Max Grad = 1.3603
+
+Max Grad = 1.07278
+
+Max Grad = 1.17173
+
+Max Grad = 2.17072
+
+Max Grad = 1.05948
+
+Max Grad = 1.15272
+
+Max Grad = 1.10317
+
+Max Grad = 1.11897
+
+Max Grad = 1.03137
+
+Max Grad = 0.983129
+
+Max Grad = 0.926091
+
+Max Grad = 1.56426
+
+Max Grad = 0.954818
+
+Max Grad = 1.19904
+
+Max Grad = 1.21465
+
+Max Grad = 0.876793
+
+Max Grad = 1.19176
+
+Max Grad = 1.24758
+
+Max Grad = 0.859815
+
+Max Grad = 1.38978
+
+Max Grad = 1.19541
+
+Iteration used = 100000
+
+Max Grad = 56.6635
+
+Max Grad = 28.8589
+
+Max Grad = 16.5603
+
+Max Grad = 17.9695
+
+Max Grad = 13.5966
+
+Max Grad = 12.8002
+
+Max Grad = 8.04729
+
+Max Grad = 11.2444
+
+Max Grad = 8.82565
+
+Max Grad = 8.51111
+
+Max Grad = 6.16791
+
+Max Grad = 5.71274
+
+Max Grad = 5.97183
+
+Max Grad = 5.19623
+
+Max Grad = 5.14437
+
+Max Grad = 5.36819
+
+Max Grad = 5.00939
+
+Max Grad = 4.19197
+
+Max Grad = 4.23884
+
+Max Grad = 4.92826
+
+Max Grad = 4.54783
+
+Max Grad = 4.42018
+
+Max Grad = 4.74928
+
+Max Grad = 3.41362
+
+Max Grad = 3.57984
+
+Max Grad = 4.09538
+
+Max Grad = 3.06421
+
+Max Grad = 3.98084
+
+Max Grad = 2.35509
+
+Max Grad = 3.32667
+
+Max Grad = 3.05013
+
+Max Grad = 2.9204
+
+Max Grad = 2.99959
+
+Max Grad = 2.83711
+
+Max Grad = 2.41526
+
+Max Grad = 2.54411
+
+Max Grad = 1.85709
+
+Max Grad = 2.90144
+
+Max Grad = 2.33345
+
+Max Grad = 2.42949
+
+Max Grad = 2.17796
+
+Max Grad = 2.65206
+
+Max Grad = 1.7503
+
+Max Grad = 2.18435
+
+Max Grad = 1.6603
+
+Max Grad = 1.80754
+
+Max Grad = 2.63942
+
+Max Grad = 1.78023
+
+Max Grad = 2.39218
+
+Max Grad = 2.17667
+
+Max Grad = 1.71255
+
+Max Grad = 2.32394
+
+Max Grad = 1.67738
+
+Max Grad = 1.73182
+
+Max Grad = 2.45228
+
+Max Grad = 1.41677
+
+Max Grad = 2.02766
+
+Max Grad = 1.55349
+
+Max Grad = 1.36938
+
+Max Grad = 1.52781
+
+Max Grad = 1.42588
+
+Max Grad = 1.48824
+
+Max Grad = 1.93266
+
+Max Grad = 1.2667
+
+Max Grad = 1.68781
+
+Max Grad = 1.70181
+
+Max Grad = 1.48281
+
+Max Grad = 1.58841
+
+Max Grad = 1.07107
+
+Max Grad = 1.35376
+
+Max Grad = 2.06973
+
+Max Grad = 1.3873
+
+Max Grad = 1.31954
+
+Max Grad = 1.48551
+
+Max Grad = 1.2604
+
+Max Grad = 1.40788
+
+Max Grad = 1.46897
+
+Max Grad = 1.18454
+
+Max Grad = 1.31947
+
+Max Grad = 1.73904
+
+Max Grad = 1.21951
+
+Max Grad = 1.33343
+
+Max Grad = 1.78929
+
+Max Grad = 1.25653
+
+Max Grad = 1.31336
+
+Max Grad = 1.21651
+
+Max Grad = 1.10838
+
+Max Grad = 1.21938
+
+Max Grad = 1.39515
+
+Max Grad = 1.30633
+
+Max Grad = 1.28878
+
+Max Grad = 1.03174
+
+Max Grad = 1.26326
+
+Max Grad = 0.964958
+
+Max Grad = 1.08256
+
+Max Grad = 1.27039
+
+Max Grad = 1.13047
+
+Max Grad = 1.10944
+
+Max Grad = 1.00528
+
+Max Grad = 0.914814
+
+Iteration used = 100000
+
+Max Grad = 45.9278
+
+Max Grad = 26.1111
+
+Max Grad = 24.879
+
+Max Grad = 13.9283
+
+Max Grad = 17.1488
+
+Max Grad = 10.0699
+
+Max Grad = 13.9627
+
+Max Grad = 7.9658
+
+Max Grad = 8.06548
+
+Max Grad = 7.5773
+
+Max Grad = 6.43611
+
+Max Grad = 5.43888
+
+Max Grad = 6.27452
+
+Max Grad = 7.55359
+
+Max Grad = 5.09271
+
+Max Grad = 6.4162
+
+Max Grad = 4.59697
+
+Max Grad = 5.48128
+
+Max Grad = 5.68525
+
+Max Grad = 3.3873
+
+Max Grad = 6.20846
+
+Max Grad = 4.52633
+
+Max Grad = 3.40116
+
+Max Grad = 5.4469
+
+Max Grad = 4.0063
+
+Max Grad = 5.00159
+
+Max Grad = 3.93035
+
+Max Grad = 2.60928
+
+Max Grad = 4.94266
+
+Max Grad = 3.25609
+
+Max Grad = 3.54245
+
+Max Grad = 4.25238
+
+Max Grad = 2.53357
+
+Max Grad = 3.76116
+
+Max Grad = 3.21576
+
+Max Grad = 2.96129
+
+Max Grad = 4.76011
+
+Max Grad = 2.70172
+
+Max Grad = 2.64615
+
+Max Grad = 3.35544
+
+Max Grad = 2.35385
+
+Max Grad = 2.97767
+
+Max Grad = 2.56466
+
+Max Grad = 2.0676
+
+Max Grad = 2.12748
+
+Max Grad = 2.58967
+
+Max Grad = 2.60506
+
+Max Grad = 3.06242
+
+Max Grad = 2.31575
+
+Max Grad = 3.01707
+
+Max Grad = 1.93245
+
+Max Grad = 2.06821
+
+Max Grad = 3.39179
+
+Max Grad = 1.83377
+
+Max Grad = 2.07151
+
+Max Grad = 2.60106
+
+Max Grad = 2.20628
+
+Max Grad = 2.78873
+
+Max Grad = 2.40683
+
+Max Grad = 1.67363
+
+Max Grad = 2.50639
+
+Max Grad = 2.07809
+
+Max Grad = 2.02143
+
+Max Grad = 2.09923
+
+Max Grad = 1.81744
+
+Max Grad = 1.87156
+
+Max Grad = 1.81037
+
+Max Grad = 1.59575
+
+Max Grad = 1.43665
+
+Max Grad = 1.96673
+
+Max Grad = 1.1487
+
+Max Grad = 2.23662
+
+Max Grad = 1.82417
+
+Max Grad = 1.93709
+
+Max Grad = 1.50767
+
+Max Grad = 1.70833
+
+Max Grad = 1.97112
+
+Max Grad = 2.30991
+
+Max Grad = 1.23344
+
+Max Grad = 2.10843
+
+Max Grad = 1.4006
+
+Max Grad = 1.48868
+
+Max Grad = 1.7459
+
+Max Grad = 1.65997
+
+Max Grad = 1.56331
+
+Max Grad = 1.60824
+
+Max Grad = 1.07046
+
+Max Grad = 1.14283
+
+Max Grad = 1.88074
+
+Max Grad = 1.25253
+
+Max Grad = 1.19902
+
+Max Grad = 1.44473
+
+Max Grad = 1.31185
+
+Max Grad = 1.61808
+
+Max Grad = 1.19522
+
+Max Grad = 1.50489
+
+Max Grad = 1.31828
+
+Max Grad = 1.20851
+
+Max Grad = 1.20218
+
+Max Grad = 1.47248
+
+Iteration used = 100000
+DONE!!!

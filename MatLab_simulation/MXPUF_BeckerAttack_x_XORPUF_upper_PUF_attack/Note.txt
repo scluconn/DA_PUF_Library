@@ -1,0 +1,41 @@
+In this case, we demonstrate the Becker's attack on MXPUF, i.e., we want to build the models of APUFs at x-XOR PUF.  
+
+The master file is: MXPUF_analysis00
+
+1. First, we need to build a MXPUF model 
+In each attack (k=1:U), 
+we generate a new set of Q (TrS) and compute the response of noisy MXPUF for this Q (ComputeNoisyResponseMXPUF.m).
+
+We get the noise information by using ComputeTheNoiseInformation
+After that, we call the CMAES algorithm
+
+The results will be stored in the variable: Xfound_total and prediction_accuracy_average
+
+Note that: we vary feedback_position from 0 to chalSize-1. For each feedback position, we attack U times. 
+
+Conclusion: the attack does work for feedback_position at chalSize-1 (last position) for 64 and 256-bit challenge
+
+Case 64-bit, feedback = 0, 32 and 64
+
+(1,1)-MXPUF, 30.000 CRPS, noise = 0.2, Iterations in CMAES: 30.000, each position: 20 times attacks 
+
+For position 64: the prediction accuracy: 6.7.9.11 (-th runs): 98%, 96%, 97%, 97% among 20 times runs 
+  average: |pred - 0.5| = 0.1218
+
+For position 254: found 6/20 times
+
+
+For position 0: prediction accuracy in [0.392, 0.528]   average: |pred - 0.5| = 0.0226
+For position 32: prediction accuracy in [0.4510, 0519] average: |pred - 0.5| = 0.0153
+
+
+
+
+
+
+
+
+
+
+
+  

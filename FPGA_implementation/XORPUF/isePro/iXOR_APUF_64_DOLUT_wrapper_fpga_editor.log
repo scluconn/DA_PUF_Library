@@ -1,0 +1,118 @@
+#:C39    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   D:\GitHub\IPUF\XORPUF\isePro
+#Date/Time:
+#:T   Mon Dec 04 11:03:06 2017
+#------------------------------
+	#Reading iXOR_APUF_64_DOLUT_wrapper.ncd...
+	#Loading device for application Rf_Device from file '7a100t.nph' in environment E:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "iXOR_APUF_64_DOLUT_wrapper" is an NCD, version 3.2, device xc7a100t, package csg324, speed -3
+	#Design creation date: 2017.12.03.04.22.59
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+unselect -all
+	#4
+select -k comp 'XAPUF/PUFList[0].APUF/SWITCH_CHAIN/netT<40>'
+	#5
+unselect -all
+	#6
+unselect -all
+	#7
+unselect -all
+	#8
+select site 'SLICE_X10Y0'
+	#site "SLICE_X10Y0",  type = SLICEM  (RPM grid X41Y0)
+	#9
+unselect -all
+	#10
+unselect -all
+	#11
+select comp 'XAPUF/PUFList[0].APUF/tigReg'
+	#comp "XAPUF/PUFList[0].APUF/tigReg",  site "SLICE_X10Y1",  type = SLICEM  (RPM grid X41Y2)
+	#12
+unselect -all
+	#13
+select comp 'XAPUF/PUFList[1].APUF/tigReg'
+	#comp "XAPUF/PUFList[1].APUF/tigReg",  site "SLICE_X34Y1",  type = SLICEM  (RPM grid X93Y2)
+	#14
+unselect -all
+	#15
+select net 'XAPUF/PUFList[2].APUF/tigSignal_inv'
+	#net "XAPUF/PUFList[2].APUF/tigSignal_inv"
+	#16
+unselect -all
+	#17
+select comp 'XAPUF/PUFList[2].APUF/tigReg'
+	#comp "XAPUF/PUFList[2].APUF/tigReg",  site "SLICE_X38Y1",  type = SLICEM  (RPM grid X101Y2)
+	#18
+unselect -all
+	#19
+select comp 'XAPUF/PUFList[0].APUF/tigReg'
+	#comp "XAPUF/PUFList[0].APUF/tigReg",  site "SLICE_X10Y1",  type = SLICEM  (RPM grid X41Y2)
+	#20
+unselect -all
+	#21
+select net 'challenge<3>'
+	#net "challenge<3>"
+	#22
+unselect -all
+	#23
+select comp 'XAPUF/PUFList[0].APUF/SWITCH_CHAIN/netT<4>'
+	#comp "XAPUF/PUFList[0].APUF/SWITCH_CHAIN/netT<4>",  site "SLICE_X10Y2",  type = SLICEM  (RPM grid X41Y4)
+	#24
+unselect -all
+	#25
+select comp 'XAPUF/PUFList[0].APUF/tigReg'
+	#comp "XAPUF/PUFList[0].APUF/tigReg",  site "SLICE_X10Y1",  type = SLICEM  (RPM grid X41Y2)
+	#26
+unselect -all
+	#27
+select site 'SLICE_X12Y0'
+	#site "SLICE_X12Y0",  type = SLICEM  (RPM grid X49Y0)
+	#28
+unselect -all
+	#29
+select site 'SLICE_X6Y0'
+	#site "SLICE_X6Y0",  type = SLICEM  (RPM grid X29Y0)
+	#30
+unselect -all
+	#31
+select site 'SLICE_X8Y0'
+	#site "SLICE_X8Y0",  type = SLICEM  (RPM grid X37Y0)
+	#32
+unselect -all
+	#33
+select site 'SLICE_X12Y0'
+	#site "SLICE_X12Y0",  type = SLICEM  (RPM grid X49Y0)
+	#34
+unselect -all
+	#35
+unselect -all
+	#36
+select site 'SLICE_X10Y0'
+	#site "SLICE_X10Y0",  type = SLICEM  (RPM grid X41Y0)
+	#37
+unselect -all
+	#38
+select comp 'XAPUF/PUFList[0].APUF/tigReg'
+	#comp "XAPUF/PUFList[0].APUF/tigReg",  site "SLICE_X10Y1",  type = SLICEM  (RPM grid X41Y2)
+	#39
+unselect -all
+	#40
+select comp 'XAPUF/PUFList[0].APUF/tigReg'
+	#comp "XAPUF/PUFList[0].APUF/tigReg",  site "SLICE_X10Y1",  type = SLICEM  (RPM grid X41Y2)
+	#41
+unselect -all
+	#42
+select comp 'XAPUF/PUFList[0].APUF/tigReg'
+	#comp "XAPUF/PUFList[0].APUF/tigReg",  site "SLICE_X10Y1",  type = SLICEM  (RPM grid X41Y2)
+	#43
+post block

@@ -1,0 +1,394 @@
+#:C179   
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   F:\RESEARCH\UPDATED_PUF_DESIGN\Artix7\XOR_APUF_SW_DOLUT_64\isePro
+#Date/Time:
+#:T   Thu Nov 02 22:18:49 2017
+#------------------------------
+	#Reading XOR_APUF_64_DOLUT_wrapper.ncd...
+	#Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "XOR_APUF_64_DOLUT_wrapper" is an NCD, version 3.2, device xc7a100t, package csg324, speed -3
+	#Design creation date: 2017.11.02.16.22.18
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'XAPUF/PUFList[1].APUF/ARBITER/qbar'
+	#3
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<1>'
+	#4
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<3>'
+	#5
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<5>'
+	#6
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<7>'
+	#7
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<9>'
+	#8
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<11>'
+	#9
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<13>'
+	#10
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<15>'
+	#11
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<17>'
+	#12
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<19>'
+	#13
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<21>'
+	#14
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<23>'
+	#15
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<25>'
+	#16
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<27>'
+	#17
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<29>'
+	#18
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<31>'
+	#19
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<33>'
+	#20
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<35>'
+	#21
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<37>'
+	#22
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<39>'
+	#23
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<41>'
+	#24
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<43>'
+	#25
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<45>'
+	#26
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<47>'
+	#27
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<49>'
+	#28
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<51>'
+	#29
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<53>'
+	#30
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<55>'
+	#31
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<57>'
+	#32
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<59>'
+	#33
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<61>'
+	#34
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<63>'
+	#35
+select -k comp 'XAPUF/PUFList[1].APUF/tigReg'
+	#36
+unselect comp 'XAPUF/PUFList[1].APUF/ARBITER/qbar'
+	#37
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<1>'
+	#38
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<3>'
+	#39
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<5>'
+	#40
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<7>'
+	#41
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<9>'
+	#42
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<11>'
+	#43
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<13>'
+	#44
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<15>'
+	#45
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<17>'
+	#46
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<19>'
+	#47
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<21>'
+	#48
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<23>'
+	#49
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<25>'
+	#50
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<27>'
+	#51
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<29>'
+	#52
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<31>'
+	#53
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<33>'
+	#54
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<35>'
+	#55
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<37>'
+	#56
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<39>'
+	#57
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<41>'
+	#58
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<43>'
+	#59
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<45>'
+	#60
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<47>'
+	#61
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<49>'
+	#62
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<51>'
+	#63
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<53>'
+	#64
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<55>'
+	#65
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<57>'
+	#66
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<61>'
+	#67
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<63>'
+	#68
+unselect comp 'XAPUF/PUFList[1].APUF/tigReg'
+	#69
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<59>'
+	#70
+select -k comp 'XAPUF/PUFList[1].APUF/ARBITER/qbar'
+	#71
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<1>'
+	#72
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<3>'
+	#73
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<5>'
+	#74
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<7>'
+	#75
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<9>'
+	#76
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<11>'
+	#77
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<13>'
+	#78
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<15>'
+	#79
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<17>'
+	#80
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<19>'
+	#81
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<21>'
+	#82
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<23>'
+	#83
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<25>'
+	#84
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<27>'
+	#85
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<29>'
+	#86
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<31>'
+	#87
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<33>'
+	#88
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<35>'
+	#89
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<37>'
+	#90
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<39>'
+	#91
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<41>'
+	#92
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<43>'
+	#93
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<45>'
+	#94
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<47>'
+	#95
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<49>'
+	#96
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<51>'
+	#97
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<53>'
+	#98
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<55>'
+	#99
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<57>'
+	#100
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<59>'
+	#101
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<61>'
+	#102
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<63>'
+	#103
+select -k comp 'XAPUF/PUFList[1].APUF/tigReg'
+	#104
+unselect comp 'XAPUF/PUFList[1].APUF/ARBITER/qbar'
+	#105
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<1>'
+	#106
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<3>'
+	#107
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<5>'
+	#108
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<7>'
+	#109
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<9>'
+	#110
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<11>'
+	#111
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<13>'
+	#112
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<15>'
+	#113
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<17>'
+	#114
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<19>'
+	#115
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<21>'
+	#116
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<23>'
+	#117
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<25>'
+	#118
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<27>'
+	#119
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<29>'
+	#120
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<31>'
+	#121
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<33>'
+	#122
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<35>'
+	#123
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<37>'
+	#124
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<39>'
+	#125
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<41>'
+	#126
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<43>'
+	#127
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<45>'
+	#128
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<47>'
+	#129
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<49>'
+	#130
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<51>'
+	#131
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<53>'
+	#132
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<55>'
+	#133
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<59>'
+	#134
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<61>'
+	#135
+unselect comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<63>'
+	#136
+unselect comp 'XAPUF/PUFList[1].APUF/tigReg'
+	#137
+unselect -all
+	#138
+select net 'challenge<7>'
+	#net "challenge<7>"
+	#139
+unselect net 'challenge<7>'
+	#140
+select -k comp 'XAPUF/PUFList[1].APUF/tigReg'
+	#141
+unselect comp 'XAPUF/PUFList[1].APUF/tigReg'
+	#142
+select -k comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<63>'
+	#143
+unselect -all
+	#144
+select comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<63>'
+	#comp "XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<63>",  site "SLICE_X30Y33",  type = SLICEM  (RPM grid X85Y66)
+	#145
+unselect -all
+	#146
+select comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<63>'
+	#comp "XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<63>",  site "SLICE_X30Y33",  type = SLICEM  (RPM grid X85Y66)
+	#147
+unselect -all
+	#148
+select comp 'XAPUF/PUFList[1].APUF/ARBITER/qbar'
+	#comp "XAPUF/PUFList[1].APUF/ARBITER/qbar",  site "SLICE_X30Y34",  type = SLICEM  (RPM grid X85Y68)
+	#149
+unselect -all
+	#150
+unselect -all
+	#151
+select comp 'XAPUF/PUFList[1].APUF/ARBITER/qbar'
+	#comp "XAPUF/PUFList[1].APUF/ARBITER/qbar",  site "SLICE_X30Y34",  type = SLICEM  (RPM grid X85Y68)
+	#152
+unselect -all
+	#153
+select net 'XAPUF/PUFList[1].APUF/pathT'
+	#net "XAPUF/PUFList[1].APUF/pathT"
+	#154
+unselect -all
+	#155
+select net 'XAPUF/PUFList[1].APUF/pathB'
+	#net "XAPUF/PUFList[1].APUF/pathB"
+	#156
+select net 'XAPUF/PUFList[1].APUF/pathT'
+	#net "XAPUF/PUFList[1].APUF/pathT"
+	#157
+unselect -all
+	#158
+select comp 'XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<1>'
+	#comp "XAPUF/PUFList[1].APUF/SWITCH_CHAIN/netB<1>",  site "SLICE_X30Y2",  type = SLICEM  (RPM grid X85Y4)
+	#159
+unselect -all
+	#160
+unselect -all
+	#161
+select site 'SLICE_X12Y52'
+	#site "SLICE_X12Y52",  type = SLICEM  (RPM grid X49Y104)
+	#162
+unselect -all
+	#163
+select site 'SLICE_X30Y48'
+	#site "SLICE_X30Y48",  type = SLICEM  (RPM grid X85Y96)
+	#164
+unselect -all
+	#165
+select pin 'SLICE_X34Y48.CIN'
+	#site.pin = SLICE_X34Y48.CIN
+	#166
+unselect -all
+	#167
+select pin 'SLICE_X34Y48.CIN'
+	#site.pin = SLICE_X34Y48.CIN
+	#168
+unselect -all
+	#169
+select site 'SLICE_X34Y48'
+	#site "SLICE_X34Y48",  type = SLICEM  (RPM grid X93Y96)
+	#170
+unselect -all
+	#171
+select site 'SLICE_X42Y48'
+	#site "SLICE_X42Y48",  type = SLICEM  (RPM grid X109Y96)
+	#172
+unselect -all
+	#173
+select site 'SLICE_X50Y48'
+	#site "SLICE_X50Y48",  type = SLICEM  (RPM grid X125Y96)
+	#174
+unselect -all
+	#175
+select site 'SLICE_X80Y49'
+	#site "SLICE_X80Y49",  type = SLICEM  (RPM grid X205Y98)
+	#176
+unselect -all
+	#177
+select site 'SLICE_X78Y49'
+	#site "SLICE_X78Y49",  type = SLICEM  (RPM grid X201Y98)
+	#178
+unselect -all
+	#179
+select site 'SLICE_X78Y49'
+	#site "SLICE_X78Y49",  type = SLICEM  (RPM grid X201Y98)
+	#180
+unselect -all

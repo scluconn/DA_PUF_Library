@@ -1,0 +1,35 @@
+In this case, we demonstrate the Marten's attack based on Becker's attack. I.e., Marten wants to build the models of (wi,wj) where wi is the most noisy PUF at x-XOR PUF and wj is the most noisy PUF at y-XOR PUF 
+
+The master file is: MXPUF_analysis00
+
+We runs the attack on noisy MXPUF $U$ times 
+
+1. First, we need to build a MXPUF model 
+In each attack (k=1:U), 
+we generate a new set of Q (TrS) and compute the response of noisy MXPUF for this Q (ComputeNoisyResponseMXPUF.m).
+
+We get the noise information by using ComputeTheNoiseInformation
+After that, we call the CMAES algorithm. Note that this CMAES is modified to do the Marten's attack. We need to compute two models wi (for x-XOR PUF), wj (for y-XOR PUF). 
+
+The results will be stored in the variable: Xfound, Xmodel, Ymodel, countX, countY
+
+Conclusion: 
+
+1. Actually, we focus on position 0, chalSize/2 and chalSize
+
+2. We do 30 attacks at each position, noise rate 20%, CRP 30.000, iteration 30.000
+
+3. At position 0 (should not have any influence from Upper XOR PUF), the attack always work with 98% accuracy
+   At position chalSize=64/2 = 32, the attacks always work with 70-80% accuracy
+   At position chalSize=64, the attack always fail (50%) or can be successful with (98%) accuracy. Fail due to the LA approximation and sucess due to Becker's attack because at position chalSize, we have (1,1)-mxpuf = 2-xor puf. 
+
+4. If we use the approximated model to approximate the (1,1)-mxpuf, then accuracy should be 97%, 77% and 55% as reported in the paper. 
+
+The result is described in prediction_accuracy.mat 
+
+ 
+ 
+
+
+
+  

@@ -1,0 +1,11 @@
+We report the result of XORPUF_analysis01 in folder fixedBit
+
+We run the CMAES on 2-XOR PUF where A1 is RAPUF and A2 is a classic APUF
+
+The noise rate is 0.01 or noise is 1% and the number of measurements for MV is 30 
+
+The number of CRPs is 70.000, we have 100 runs of CMAES
+
+We want to see that whether the A1 can be caught by CMAES in 100 runs or not?
+
+The result is NEGATIVE (NO), only A2 can be caught. It means that A1 is hidden from CMAES. 

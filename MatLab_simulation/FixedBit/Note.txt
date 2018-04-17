@@ -1,0 +1,27 @@
+In this folder, we do the experiment on Becker's Attack wrt secure design, i.e., a majority voting is applied to enhance the reliability of at least one APUF in XOR PUF and we hope that it is a secure design against becker's attack
+
+1. APUF_analysis00 
+
+We analyse the hard fixed bit and majority voting on one APUF
+
+2. XORPUF_analysis00.m 
+
+3. XORPUF_analysis01.m
+
+Use ComputeNoisyResponseXOR_MajorityVoting to compute the APUFs and XORPUFs responses in nMeasurement (for MajorityVoting) and nReliability (for Becker's information)
+
+After that, we use ComputeRankingModel to see in each run, what is the rank of found APUF model by Reliability information
+
+- FilterMatrice: We use this one to extract the information from ComputeNoisyResponseXOR: 1. Array for XORPUF output, 2. Array for computing Majority Voting+Becker of A1, 3. Array for computing Becker of A2, ..., AnXOR
+
+Goal in analysis01: we run CMAES (NRoundAttack), in each run, we want to see whether A1 can be found or not. 
+
+
+
+
+ 
+
+
+
+
+ 
