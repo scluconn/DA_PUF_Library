@@ -1,0 +1,7 @@
+Main file: k_junta_testing.m
+
+Base on a lecture note: Property Testing of Functions, Junta Testing available in this directory and available online at https://courses.cs.washington.edu/courses/cse522/14sp/lectures/lect16.pdf
+Please specify k_junta and epsilon in the code for testing. The result of the testing will be printed to the screen. 
+
+Notice that k_junta testing is a randomized algorithm with successful probability >= 2/3.
+Do repeat it for a few times.

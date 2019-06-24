@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "IPUFKerasTensorFlowV2", "IPUFKerasTensorFlowV2\IPUFKerasTensorFlowV2.pyproj", "{D66A4709-32D8-4A31-8D15-FEF91DB38027}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D66A4709-32D8-4A31-8D15-FEF91DB38027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D66A4709-32D8-4A31-8D15-FEF91DB38027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2CA8BF2-6628-41C4-BBA6-DF17258C5181}
+	EndGlobalSection
+EndGlobal
