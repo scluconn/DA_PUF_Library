@@ -16,3 +16,5 @@ If you have any questions regarding the codes, please direct your questions as f
 1. Regarding MATLAB codes, please send emails to Durga at dpsahoo.cs@gmail.com, or Ha at phuong_ha.nguyen@uconn.edu
 2. Regarding C# codes and Python codes, please send emails to Kaleel at kaleel.mahmood@uconn.edu 
 3. Regarding hardware implementation, please send emails to Durga at dpsahoo.cs@gmail.com, or Chenglu at chenglu.jin@uconn.edu
+
+A detailed tutorial video about the design and implementation of the interpose PUF (iPUF) is presented on [YouTube](https://www.youtube.com/playlist?list=PLK5NNs4GceLQw7bOEHSdZOwHlmSF1zvSW). 
